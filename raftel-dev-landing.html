@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raftel Développement — Scripts Python, SaaS & Guides IT</title>
+
+<!-- SEO -->
+<meta name="description" content="Raftel Développement : scripts Python, SaaS et guides IT conçus pour automatiser, analyser et vendre. Market Analyzer PRO, eBay Deal Hunter, Annonzia et plus.">
+<meta name="keywords" content="scripts python, automatisation, SaaS, guides IT, cybersécurité, indie maker, Gumroad, trading, eBay scraping">
+<meta name="author" content="Raftel Développement">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rafteldev.fr">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rafteldev.fr">
+<meta property="og:title" content="Raftel Développement — Scripts Python, SaaS & Guides IT">
+<meta property="og:description" content="Des outils Python, des SaaS et des guides pour automatiser, analyser et vendre — conçus par un maker, pour les makers.">
+<meta property="og:image" content="https://rafteldev.fr/og-image.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Raftel Développement">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Raftel Développement — Scripts Python, SaaS & Guides IT">
+<meta name="twitter:description" content="Des outils Python, des SaaS et des guides pour automatiser, analyser et vendre.">
+<meta name="twitter:image" content="https://rafteldev.fr/og-image.png">
+
+<!-- Favicon SVG inline (fonctionne sans fichier externe) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2307080f'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='top' font-family='serif' fill='%23e8a020'>R</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2307080f'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='top' font-family='serif' fill='%23e8a020'>R</text></svg>">
+
+<!-- Performance : préconnexion Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #e8a020;
+    --gold-light: #f5c842;
+    --gold-dim: #b87818;
+    --dark: #07080f;
+    --dark-2: #0e1020;
+    --dark-3: #161828;
+    --dark-4: #1e2135;
+    --text: #e8e6df;
+    --text-muted: #8a8880;
+    --accent: #3a6bff;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* ── STARFIELD ── */
+  #stars {
+    position: fixed; inset: 0; z-index: 0;
+    background:
+      radial-gradient(ellipse at 20% 10%, rgba(58,107,255,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 80%, rgba(232,160,32,0.06) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  #stars::before, #stars::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 15% 8%, rgba(255,255,255,0.6) 0%, transparent 100%),
+      radial-gradient(1px 1px at 42% 22%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 67% 5%, rgba(255,255,255,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 88% 35%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 5% 55%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 33% 70%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 71% 62%, rgba(255,255,255,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 90% 90%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 52% 45%, rgba(232,160,32,0.5) 0%, transparent 100%),
+      radial-gradient(1.5px 1.5px at 25% 85%, rgba(232,160,32,0.4) 0%, transparent 100%);
+  }
+  #stars::after {
+    background-image:
+      radial-gradient(1px 1px at 8% 30%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 55% 15%, rgba(255,255,255,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 79% 48%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 18% 92%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 95% 20%, rgba(255,255,255,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 38% 55%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(2px 2px at 62% 80%, rgba(255,255,255,0.15) 0%, transparent 100%);
+    animation: twinkle 4s ease-in-out infinite alternate;
+  }
+  @keyframes twinkle {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.2rem 3rem;
+    background: rgba(7,8,15,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(232,160,32,0.12);
+  }
+  .nav-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: transparent;
+    border: 1px solid var(--gold-dim);
+    color: var(--gold);
+    padding: 0.55rem 1.4rem;
+    border-radius: 4px;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .nav-cta:hover { background: rgba(232,160,32,0.1); border-color: var(--gold); }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; z-index: 1;
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 5rem;
+  }
+  .hero-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(232,160,32,0.3);
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+    margin-bottom: 2.5rem;
+    animation: fadeUp 0.7s ease both;
+  }
+  .hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.3em;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+  .hero-title span {
+    display: block;
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dim) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-title .dev-word {
+    font-size: 0.55em;
+    display: block;
+    letter-spacing: 0.18em;
+    color: var(--text-muted);
+    -webkit-text-fill-color: var(--text-muted);
+    background: none;
+    margin-top: 0.2em;
+  }
+  .hero-sub {
+    max-width: 560px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 2rem auto 3.5rem;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+  .hero-actions {
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dim) 100%);
+    color: var(--dark);
+    padding: 0.9rem 2.2rem;
+    border-radius: 4px;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.18s, box-shadow 0.18s;
+    box-shadow: 0 4px 24px rgba(232,160,32,0.25);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(232,160,32,0.35); }
+  .btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--text);
+    padding: 0.9rem 2.2rem;
+    border-radius: 4px;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: border-color 0.18s, background 0.18s;
+  }
+  .btn-ghost:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.04); }
+
+  .hero-stats {
+    display: flex; gap: 3rem; margin-top: 5rem;
+    animation: fadeUp 0.8s 0.45s ease both;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat .num {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+  }
+  .hero-stat .label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .hero-divider {
+    width: 1px; height: 40px;
+    background: rgba(255,255,255,0.1);
+    align-self: center;
+  }
+
+  /* ── SECTION BASE ── */
+  section { position: relative; z-index: 1; }
+  .section-inner { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .section-desc {
+    color: var(--text-muted);
+    max-width: 520px;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* ── PRODUITS ── */
+  #produits { padding: 7rem 0; }
+  .products-header { margin-bottom: 4rem; }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .product-card {
+    background: var(--dark-2);
+    border: 1px solid rgba(232,160,32,0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: block;
+    color: var(--text);
+  }
+  .product-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .product-card:hover { border-color: rgba(232,160,32,0.35); transform: translateY(-3px); }
+  .product-card:hover::before { opacity: 1; }
+  .product-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.7rem;
+    border-radius: 2px;
+    margin-bottom: 1.2rem;
+  }
+  .tag-python { background: rgba(58,107,255,0.15); color: #6b9fff; border: 1px solid rgba(58,107,255,0.25); }
+  .tag-saas { background: rgba(100,200,120,0.12); color: #7ecf8a; border: 1px solid rgba(100,200,120,0.25); }
+  .tag-guide { background: rgba(232,160,32,0.12); color: var(--gold); border: 1px solid rgba(232,160,32,0.25); }
+  .product-name {
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+  .product-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
+  .product-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 1rem;
+  }
+  .product-price {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .product-link {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    transition: color 0.2s;
+    display: flex; align-items: center; gap: 0.3rem;
+  }
+  .product-card:hover .product-link { color: var(--gold); }
+  .product-link::after { content: '→'; }
+
+  /* ── FEATURED (grand card) ── */
+  .product-card.featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(135deg, var(--dark-3) 0%, var(--dark-2) 100%);
+    border-color: rgba(232,160,32,0.2);
+  }
+  .product-card.featured::before { opacity: 1; }
+
+  /* ── ABOUT ── */
+  #about {
+    padding: 7rem 0;
+    background: var(--dark-2);
+    border-top: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .about-visual {
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .about-hexagon {
+    width: 240px; height: 240px;
+    background: linear-gradient(135deg, var(--dark-3), var(--dark-4));
+    border: 1px solid rgba(232,160,32,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .about-hexagon::before {
+    content: '';
+    position: absolute; inset: -12px;
+    border-radius: 50%;
+    border: 1px solid rgba(232,160,32,0.08);
+  }
+  .about-hexagon::after {
+    content: '';
+    position: absolute; inset: -24px;
+    border-radius: 50%;
+    border: 1px solid rgba(232,160,32,0.04);
+  }
+  .about-initial {
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold-dim));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .about-content .section-desc { max-width: 100%; margin-bottom: 2rem; }
+  .about-skills {
+    display: flex; flex-wrap: wrap; gap: 0.6rem;
+  }
+  .skill-pill {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 0.35rem 0.9rem;
+    border-radius: 2px;
+    background: var(--dark-3);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: var(--text-muted);
+  }
+
+  /* ── CATEGORIES ── */
+  #categories { padding: 7rem 0; }
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+  .cat-card {
+    padding: 2.2rem;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    background: var(--dark-2);
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .cat-card:hover { border-color: rgba(232,160,32,0.2); background: var(--dark-3); }
+  .cat-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+  .cat-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+  .cat-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.65; }
+
+  /* ── CTA FINAL ── */
+  #cta {
+    padding: 8rem 0;
+    text-align: center;
+  }
+  .cta-glow {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, rgba(232,160,32,0.06) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .cta-inner { position: relative; z-index: 1; }
+  .cta-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+    line-height: 1;
+  }
+  .cta-title span { color: var(--gold); }
+  .cta-sub {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 480px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; z-index: 1;
+  }
+  .footer-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold-dim);
+    text-decoration: none;
+  }
+  .footer-right {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  .footer-links { display: flex; gap: 1.5rem; list-style: none; }
+  .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.8rem; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* ── GOLD LINE SEPARATOR ── */
+  .gold-line {
+    width: 60px; height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-visual { display: none; }
+    .categories-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 1.5rem; }
+    .product-card.featured { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div id="stars"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">RAFTEL DEV</a>
+  <ul class="nav-links">
+    <li><a href="#produits">Produits</a></li>
+    <li><a href="#categories">Catégories</a></li>
+    <li><a href="#about">À propos</a></li>
+  </ul>
+  <a href="https://rafteldev.gumroad.com" target="_blank" class="nav-cta">Voir la boutique</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-label">Indie Maker · Outils & Scripts</span>
+  <h1 class="hero-title">
+    <span>Raftel</span>
+    <span class="dev-word">Développement</span>
+  </h1>
+  <p class="hero-sub">
+    Des outils Python, des SaaS et des guides pour automatiser, analyser et vendre — conçus par un maker, pour les makers.
+  </p>
+  <div class="hero-actions">
+    <a href="https://rafteldev.gumroad.com" target="_blank" class="btn-primary">Découvrir les produits</a>
+    <a href="#about" class="btn-ghost">En savoir plus</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="num">10+</span>
+      <span class="label">Produits</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <span class="num">3</span>
+      <span class="label">SaaS actifs</span>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-stat">
+      <span class="num">26</span>
+      <span class="label">Guides IT</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUITS -->
+<section id="produits">
+  <div class="section-inner">
+    <div class="products-header reveal">
+      <p class="section-label">Produits phares</p>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Des outils prêts à l'emploi</h2>
+      <p class="section-desc">Chaque produit est conçu pour être opérationnel immédiatement — pas de configuration complexe, résultats immédiats.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <a href="https://rafteldev.gumroad.com" target="_blank" class="product-card featured reveal">
+        <div>
+          <span class="product-tag tag-python">Python · Script</span>
+          <h3 class="product-name">Market Analyzer PRO</h3>
+          <p class="product-desc">Analyse technique avancée d'actions & crypto. Indicateurs RSI, MACD, Bollinger, rapport PDF généré automatiquement. Idéal pour les traders qui veulent automatiser leur veille.</p>
+        </div>
+        <div class="product-footer" style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-top: none; padding-top: 0;">
+          <span class="product-price">À partir de 9,99€</span>
+          <span class="product-link">Voir sur Gumroad</span>
+        </div>
+      </a>
+
+      <a href="https://rafteldev.gumroad.com" target="_blank" class="product-card reveal">
+        <span class="product-tag tag-python">Python · Script</span>
+        <h3 class="product-name">eBay Deal Hunter v2</h3>
+        <p class="product-desc">Scraping automatisé de 54 recherches sur 18 catégories eBay. Calcul de marges, alertes e-mail, mode boucle auto. Trouvez les meilleures affaires en temps réel.</p>
+        <div class="product-footer">
+          <span class="product-price">14,99€</span>
+          <span class="product-link">Acheter</span>
+        </div>
+      </a>
+
+      <a href="https://annonzia.fr" target="_blank" class="product-card reveal">
+        <span class="product-tag tag-saas">SaaS · Web App</span>
+        <h3 class="product-name">Annonzia</h3>
+        <p class="product-desc">Générateur d'annonces IA pour Vinted, Leboncoin, Etsy & Amazon. Rédigez des annonces optimisées en secondes avec l'IA. Starter 3,99€/mois.</p>
+        <div class="product-footer">
+          <span class="product-price">3,99€ / mois</span>
+          <span class="product-link">Essayer</span>
+        </div>
+      </a>
+
+      <a href="https://rafteldev.gumroad.com" target="_blank" class="product-card reveal">
+        <span class="product-tag tag-guide">Guide · PDF</span>
+        <h3 class="product-name">Pack Guides IT & Cyber</h3>
+        <p class="product-desc">26 guides professionnels : cybersécurité, cloud, développement, FiveM. Format .docx prêt à imprimer ou partager. Pack All-in-One disponible.</p>
+        <div class="product-footer">
+          <span class="product-price">Jusqu'à 299€</span>
+          <span class="product-link">Voir le pack</span>
+        </div>
+      </a>
+
+      <a href="https://rafteldev.gumroad.com" target="_blank" class="product-card reveal">
+        <span class="product-tag tag-saas">SaaS · Web App</span>
+        <h3 class="product-name">RelanceAI</h3>
+        <p class="product-desc">Automatisez vos relances de paiement par e-mail. Conçu pour les freelances et indépendants. Intégration Stripe, Supabase et IA pour rédiger les e-mails parfaits.</p>
+        <div class="product-footer">
+          <span class="product-price">Abonnement mensuel</span>
+          <span class="product-link">Découvrir</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="section-inner">
+    <div class="reveal">
+      <p class="section-label">Catalogue complet</p>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Tous les domaines</h2>
+      <p class="section-desc">Du script Python à l'application web complète — Raftel Développement couvre l'ensemble du cycle maker.</p>
+    </div>
+
+    <div class="categories-grid">
+      <div class="cat-card reveal">
+        <span class="cat-icon">⚙️</span>
+        <h3 class="cat-title">Automatisation Python</h3>
+        <p class="cat-desc">Scripts prêts à l'emploi pour la finance, le trading, le scraping eBay et la création de contenu automatisé.</p>
+      </div>
+      <div class="cat-card reveal">
+        <span class="cat-icon">🌐</span>
+        <h3 class="cat-title">SaaS & Web Apps</h3>
+        <p class="cat-desc">Applications React + Supabase avec IA intégrée : générateurs d'annonces, relances automatiques, fiches produits.</p>
+      </div>
+      <div class="cat-card reveal">
+        <span class="cat-icon">📚</span>
+        <h3 class="cat-title">Guides IT & Cyber</h3>
+        <p class="cat-desc">26 guides professionnels couvrant la cybersécurité, le cloud, le développement et les scripts FiveM RP.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-hexagon">
+          <span class="about-initial">R</span>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <p class="section-label">À propos</p>
+        <div class="gold-line"></div>
+        <h2 class="section-title">Construit par un maker,<br>pour les makers</h2>
+        <p class="section-desc" style="margin-bottom: 1rem;">
+          Raftel Développement, c'est un technicien IT normand avec 9 ans d'expérience qui décide de transformer ses projets persos en produits commerciaux.
+        </p>
+        <p class="section-desc" style="margin-bottom: 2rem;">
+          Chaque outil est né d'un vrai besoin : automatiser, analyser, vendre plus efficacement. Pas de blabla — que du code qui tourne.
+        </p>
+        <div class="about-skills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Supabase</span>
+          <span class="skill-pill">Stripe</span>
+          <span class="skill-pill">Claude API</span>
+          <span class="skill-pill">Gumroad</span>
+          <span class="skill-pill">IT / Réseau</span>
+          <span class="skill-pill">BTS SIO SISR</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta">
+  <div class="cta-glow"></div>
+  <div class="section-inner cta-inner reveal">
+    <p class="section-label" style="margin-bottom: 1.5rem;">Prêt à démarrer ?</p>
+    <h2 class="cta-title">Rejoins la <span>boutique</span><br>Raftel Développement</h2>
+    <p class="cta-sub">Scripts, SaaS et guides disponibles immédiatement sur Gumroad. Paiement sécurisé, accès instantané.</p>
+    <a href="https://rafteldev.gumroad.com" target="_blank" class="btn-primary" style="font-size: 1rem; padding: 1.1rem 3rem;">
+      Voir tous les produits →
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo">RAFTEL DÉVELOPPEMENT</a>
+  <ul class="footer-links">
+    <li><a href="https://rafteldev.gumroad.com" target="_blank">Gumroad</a></li>
+    <li><a href="/cdn-cgi/l/email-protection#9dfef2f3e9fcfee9ddeffcfbe9f8f1f9f8ebb3fbef">Contact</a></li>
+  </ul>
+  <span class="footer-right">© 2025 Raftel Développement</span>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), 
