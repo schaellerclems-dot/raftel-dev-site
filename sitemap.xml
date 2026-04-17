@@ -1,32 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Page principale -->
+  <!-- Pages principales -->
   <url>
-    <loc>https://www.rafteldeveloppement.fr/</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://rafteldeveloppement.fr/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/developpement-sur-mesure.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/services.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Pages produits — Scripts Python -->
+  <url>
+    <loc>https://rafteldeveloppement.fr/market-analyzer-pro.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/ebay-deal-hunter.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Pages produits — Guides IT -->
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-fivem.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-cybersecurite.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-powershell.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-active-directory.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-pfsense.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-microsoft365.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-gpo.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-n8n.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-stripe.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-rgpd.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafteldeveloppement.fr/guide-saas.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Pages légales -->
   <url>
-    <loc>https://www.rafteldeveloppement.fr/mentions-legales.html</loc>
-    <lastmod>2026-04-16</lastmod>
+    <loc>https://rafteldeveloppement.fr/mentions-legales.html</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.rafteldeveloppement.fr/cgv.html</loc>
-    <lastmod>2026-04-16</lastmod>
+    <loc>https://rafteldeveloppement.fr/cgv.html</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.rafteldeveloppement.fr/confidentialite.html</loc>
-    <lastmod>2026-04-16</lastmod>
+    <loc>https://rafteldeveloppement.fr/confidentialite.html</loc>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
