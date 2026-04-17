@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Développement sur mesure — Site internet, Script Python, SaaS, Outil IA | Raftel Développement</title>
+<meta name="description" content="Raftel Développement crée sur mesure vos sites internet, scripts Python, applications web et outils IA. Devis gratuit sous 48h. Basé en Normandie, travaille partout en France.">
+<meta name="keywords" content="développement web sur mesure, créer site internet entreprise, script python sur mesure, application web SaaS, développeur freelance france, outil automatisation python, développeur IA Claude OpenAI">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rafteldeveloppement.fr/developpement-sur-mesure.html">
+<meta property="og:title" content="Développement sur mesure — Raftel Développement">
+<meta property="og:description" content="Sites internet, scripts Python, SaaS et outils IA développés sur mesure. Devis gratuit sous 48h.">
+<meta property="og:url" content="https://rafteldeveloppement.fr/developpement-sur-mesure.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2307080f'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='top' font-family='serif' fill='%23e8a020'>R</text></svg>">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#e8a020;--gold-light:#f5c842;--gold-dim:#b87818;--dark:#07080f;--dark-2:#0e1020;--dark-3:#161828;--dark-4:#1e2135;--text:#e8e6df;--text-muted:#8a8880}
+html{scroll-behavior:smooth}
+body{background:var(--dark);color:var(--text);font-family:'Syne',sans-serif;font-size:16px;line-height:1.75;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;background:rgba(7,8,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(232,160,32,0.12)}
+.nav-logo{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:700;color:var(--gold);text-decoration:none}
+.nav-back{color:var(--text-muted);text-decoration:none;font-size:0.85rem;font-weight:500;transition:color 0.2s}
+.nav-back:hover{color:var(--gold)}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem}
+section{position:relative;z-index:1}
+.section-label{font-size:0.72rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem}
+.section-title{font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;line-height:1.1;margin-bottom:1rem}
+.gold-line{width:60px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:2.5rem}
+.btn-primary{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-dim));color:var(--dark);padding:1rem 2.5rem;border-radius:4px;font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;transition:transform 0.18s,box-shadow 0.18s;box-shadow:0 4px 24px rgba(232,160,32,0.25)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(232,160,32,0.4)}
+.btn-ghost{display:inline-block;background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text);padding:1rem 2.5rem;border-radius:4px;font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;text-decoration:none;transition:border-color 0.18s,background 0.18s}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.04)}
+
+/* HERO */
+.hero{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10rem 2rem 5rem}
+.hero-label{display:inline-block;font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(232,160,32,0.3);padding:0.4rem 1rem;border-radius:2px;margin-bottom:2rem}
+.hero-title{font-family:'Cinzel',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;line-height:1;margin-bottom:1.5rem}
+.hero-title span{background:linear-gradient(135deg,var(--gold-light),var(--gold),var(--gold-dim));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{max-width:620px;font-size:1.1rem;color:var(--text-muted);line-height:1.8;margin:0 auto 3rem}
+.hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* PRESTATIONS */
+#prestations{padding:6rem 0}
+.prestations-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:4rem}
+.presta-card{background:var(--dark-2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:2.5rem;position:relative;overflow:hidden;transition:border-color 0.3s,transform 0.2s}
+.presta-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity 0.3s}
+.presta-card:hover{border-color:rgba(232,160,32,0.3);transform:translateY(-3px)}
+.presta-card:hover::before{opacity:1}
+.presta-icon{font-size:2.2rem;margin-bottom:1.2rem;display:block}
+.presta-title{font-family:'Cinzel',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.8rem}
+.presta-desc{font-size:0.92rem;color:var(--text-muted);line-height:1.75;margin-bottom:1.5rem}
+.presta-tags{display:flex;flex-wrap:wrap;gap:0.4rem}
+.tag{font-size:0.72rem;font-weight:700;letter-spacing:0.06em;padding:0.28rem 0.7rem;border-radius:2px;background:var(--dark-3);border:1px solid rgba(255,255,255,0.08);color:var(--text-muted)}
+
+/* EXEMPLES CONCRETS */
+#exemples{padding:6rem 0;background:var(--dark-2);border-top:1px solid rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.04)}
+.exemples-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:4rem}
+.exemple-card{background:var(--dark-3);border:1px solid rgba(232,160,32,0.1);border-radius:8px;padding:1.8rem}
+.exemple-client{font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem}
+.exemple-title{font-weight:700;font-size:0.95rem;margin-bottom:0.6rem}
+.exemple-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.65}
+
+/* PROCESSUS */
+#processus{padding:6rem 0}
+.processus-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:4rem;position:relative}
+.processus-steps::before{content:'';position:absolute;top:2.5rem;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(232,160,32,0.2),transparent)}
+.step{text-align:center;padding:1.5rem 1rem}
+.step-num{font-family:'Cinzel',serif;font-size:2.8rem;font-weight:900;color:rgba(232,160,32,0.15);display:block;margin-bottom:1rem}
+.step-title{font-family:'Cinzel',serif;font-size:0.95rem;font-weight:700;margin-bottom:0.6rem}
+.step-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.65}
+
+/* POURQUOI */
+#pourquoi{padding:6rem 0;background:var(--dark-2);border-top:1px solid rgba(255,255,255,0.04)}
+.pourquoi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem}
+.pourquoi-item{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem;background:var(--dark-3);border-radius:6px;border:1px solid rgba(255,255,255,0.06)}
+.pourquoi-check{color:var(--gold);font-size:1.1rem;flex-shrink:0;margin-top:2px}
+.pourquoi-text strong{display:block;font-size:0.92rem;font-weight:700;margin-bottom:0.3rem}
+.pourquoi-text span{font-size:0.85rem;color:var(--text-muted)}
+
+/* FAQ */
+#faq{padding:6rem 0}
+.faq-list{margin-top:3rem;max-width:760px}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.07);padding:1.5rem 0}
+.faq-q{font-weight:700;font-size:0.98rem;margin-bottom:0.6rem;color:var(--text)}
+.faq-a{font-size:0.9rem;color:var(--text-muted);line-height:1.75}
+
+/* CTA */
+#contact{padding:7rem 0;text-align:center}
+.contact-glow{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(232,160,32,0.06) 0%,transparent 65%);pointer-events:none}
+.contact-inner{position:relative;z-index:1}
+.contact-title{font-family:'Cinzel',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:900;margin-bottom:1rem;line-height:1.1}
+.contact-title span{color:var(--gold)}
+.contact-sub{color:var(--text-muted);font-size:1rem;max-width:500px;margin:0 auto 2.5rem;line-height:1.8}
+.contact-email{display:inline-flex;align-items:center;gap:0.8rem;background:var(--dark-2);border:1px solid rgba(232,160,32,0.2);border-radius:6px;padding:1.2rem 2rem;margin-bottom:1.5rem;font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);text-decoration:none;transition:border-color 0.2s,background 0.2s}
+.contact-email:hover{border-color:var(--gold);background:rgba(232,160,32,0.05)}
+.contact-note{font-size:0.82rem;color:var(--text-muted)}
+
+/* FOOTER */
+footer{border-top:1px solid rgba(255,255,255,0.06);padding:2.5rem 3rem;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1}
+.footer-logo{font-family:'Cinzel',serif;font-size:0.95rem;font-weight:700;color:var(--gold-dim);text-decoration:none}
+.footer-links{display:flex;gap:1.5rem;list-style:none}
+.footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.8rem;transition:color 0.2s}
+.footer-links a:hover{color:var(--gold)}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .prestations-grid,.pourquoi-grid{grid-template-columns:1fr}
+  .exemples-grid{grid-template-columns:1fr}
+  .processus-steps{grid-template-columns:1fr 1fr}
+  .processus-steps::before{display:none}
+  footer{flex-direction:column;gap:1.5rem;text-align:center}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">RAFTEL DEV</a>
+  <a href="index.html" class="nav-back">← Retour à l'accueil</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-label">Développement sur mesure · Devis gratuit</span>
+  <h1 class="hero-title">Votre projet,<br><span>développé sur mesure</span></h1>
+  <p class="hero-sub">Site internet, script Python, application web, outil d'automatisation ou SaaS — si vous avez un besoin précis, je construis la solution adaptée à votre activité. Devis gratuit, réponse sous 48h.</p>
+  <div class="hero-actions">
+    <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
+    <a href="#prestations" class="btn-ghost">Voir les prestations</a>
+  </div>
+</section>
+
+<!-- PRESTATIONS -->
+<section id="prestations">
+  <div class="container">
+    <p class="section-label">Prestations</p>
+    <div class="gold-line"></div>
+    <h2 class="section-title">Ce que je développe</h2>
+    <p style="color:var(--text-muted);max-width:560px;line-height:1.75;">Chaque projet est unique. Que ce soit une simple landing page ou une application web complète avec IA intégrée, je m'adapte à vos besoins et à votre budget.</p>
+    <div class="prestations-grid">
+      <div class="presta-card">
+        <span class="presta-icon">🌐</span>
+        <h3 class="presta-title">Sites internet & landing pages</h3>
+        <p class="presta-desc">Site vitrine professionnel, landing page produit ou page de vente optimisée pour convertir. Design soigné, responsive, rapide et optimisé pour le référencement Google.</p>
+        <div class="presta-tags"><span class="tag">HTML/CSS</span><span class="tag">React</span><span class="tag">Vercel</span><span class="tag">SEO</span><span class="tag">Responsive</span></div>
+      </div>
+      <div class="presta-card">
+        <span class="presta-icon">⚙️</span>
+        <h3 class="presta-title">Scripts Python sur mesure</h3>
+        <p class="presta-desc">Automatisation de tâches répétitives, scraping de données, traitement de fichiers Excel/CSV, envoi d'e-mails automatiques, génération de rapports PDF, alertes et notifications.</p>
+        <div class="presta-tags"><span class="tag">Python</span><span class="tag">Automatisation</span><span class="tag">Scraping</span><span class="tag">Reporting</span><span class="tag">API</span></div>
+      </div>
+      <div class="presta-card">
+        <span class="presta-icon">🚀</span>
+        <h3 class="presta-title">Applications web & SaaS</h3>
+        <p class="presta-desc">Application web complète avec authentification, base de données, tableau de bord et monétisation. Stack moderne React + Supabase, déployé sur Vercel avec domaine custom.</p>
+        <div class="presta-tags"><span class="tag">React</span><span class="tag">Supabase</span><span class="tag">Stripe</span><span class="tag">Auth</span><span class="tag">Dashboard</span></div>
+      </div>
+      <div class="presta-card">
+        <span class="presta-icon">🤖</span>
+        <h3 class="presta-title">Outils IA & automatisation intelligente</h3>
+        <p class="presta-desc">Intégration de l'IA dans vos processus : générateur de contenu, analyse de documents, chatbot métier, classification automatique, résumé de données ou assistant personnalisé.</p>
+        <div class="presta-tags"><span class="tag">Claude API</span><span class="tag">OpenAI</span><span class="tag">n8n</span><span class="tag">Webhooks</span><span class="tag">LLM</span></div>
+      </div>
+      <div class="presta-card">
+        <span class="presta-icon">🛒</span>
+        <h3 class="presta-title">Boutiques en ligne & paiement</h3>
+        <p class="presta-desc">Boutique e-commerce sur mesure ou intégration Stripe/Gumroad sur un site existant. Catalogue produits, paiement sécurisé, livraison digitale et gestion des commandes.</p>
+        <div class="presta-tags"><span class="tag">Stripe</span><span class="tag">E-commerce</span><span class="tag">Gumroad</span><span class="tag">Paiement</span></div>
+      </div>
+      <div class="presta-card">
+        <span class="presta-icon">🔧</span>
+        <h3 class="presta-title">Refonte & optimisation de site existant</h3>
+        <p class="presta-desc">Votre site est lent, vieillissant ou mal référencé ? Audit complet, refonte visuelle, optimisation des performances et du SEO pour repartir sur des bases solides.</p>
+        <div class="presta-tags"><span class="tag">Audit</span><span class="tag">Performance</span><span class="tag">SEO</span><span class="tag">Refonte</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXEMPLES CONCRETS -->
+<section id="exemples">
+  <div class="container">
+    <p class="section-label">Exemples de projets</p>
+    <div class="gold-line"></div>
+    <h2 class="section-title">Des idées de ce que je peux réaliser</h2>
+    <p style="color:var(--text-muted);max-width:540px;line-height:1.75;">Ces exemples illustrent le type de projets que je peux développer — quel que soit votre secteur d'activité.</p>
+    <div class="exemples-grid">
+      <div class="exemple-card">
+        <p class="exemple-client">Artisan / Commerce</p>
+        <p class="exemple-title">Site vitrine avec prise de RDV en ligne</p>
+        <p class="exemple-desc">Site professionnel avec formulaire de contact, calendrier de réservation et présentation des services.</p>
+      </div>
+      <div class="exemple-card">
+        <p class="exemple-client">E-commerce / Revendeur</p>
+        <p class="exemple-title">Script de veille prix concurrents</p>
+        <p class="exemple-desc">Script Python qui surveille les prix de vos concurrents sur Amazon/eBay et vous alerte par e-mail.</p>
+      </div>
+      <div class="exemple-card">
+        <p class="exemple-client">Entreprise / PME</p>
+        <p class="exemple-title">Outil de génération de devis PDF</p>
+        <p class="exemple-desc">Application web interne pour créer, envoyer et archiver des devis clients au format PDF automatiquement.</p>
+      </div>
+      <div class="exemple-card">
+        <p class="exemple-client">Freelance / Indépendant</p>
+        <p class="exemple-title">SaaS de facturation simple</p>
+        <p class="exemple-desc">Application web avec authentification, création de factures, envoi par e-mail et suivi des paiements.</p>
+      </div>
+      <div class="exemple-card">
+        <p class="exemple-client">Marketing / Communication</p>
+        <p class="exemple-title">Générateur de contenu IA</p>
+        <p class="exemple-desc">Outil web qui génère des posts LinkedIn, des descriptions produits ou des e-mails marketing via l'IA.</p>
+      </div>
+      <div class="exemple-card">
+        <p class="exemple-client">Immobilier / Location</p>
+        <p class="exemple-title">Script d'alertes annonces LeBonCoin</p>
+        <p class="exemple-desc">Script Python qui surveille les nouvelles annonces selon vos critères et vous notifie instantanément.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSUS -->
+<section id="processus">
+  <div class="container">
+    <p class="section-label">Comment ça se passe</p>
+    <div class="gold-line"></div>
+    <h2 class="section-title">Un processus simple et transparent</h2>
+    <div class="processus-steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h3 class="step-title">Vous décrivez votre projet</h3>
+        <p class="step-desc">Un e-mail suffit. Décrivez ce que vous voulez faire, vos contraintes et votre délai idéal.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h3 class="step-title">Je vous envoie un devis</h3>
+        <p class="step-desc">Réponse sous 48h avec un devis détaillé, gratuit et sans engagement.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h3 class="step-title">On valide ensemble</h3>
+        <p class="step-desc">On affine les détails, je vous montre une maquette ou un prototype avant de commencer.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <h3 class="step-title">Livraison & support</h3>
+        <p class="step-desc">Le projet livré, testé et documenté. Support inclus pour la prise en main.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI -->
+<section id="pourquoi">
+  <div class="container">
+    <p class="section-label">Pourquoi Raftel Développement</p>
+    <div class="gold-line"></div>
+    <h2 class="section-title">Ce qui fait la différence</h2>
+    <div class="pourquoi-grid">
+      <div class="pourquoi-item">
+        <span class="pourquoi-check">✓</span>
+        <div class="pourquoi-text"><strong>Code propre et documenté</strong><span>Vous recevez le code source complet, commenté et réutilisable. Pas de boîte noire.</span></div>
+      </div>
+      <div class="pourquoi-item">
+        <span class="pourquoi-check">✓</span>
+        <div class="pourquoi-text"><strong>Interlocuteur unique</strong><span>Pas d'agence ni d'intermédiaire. Vous travaillez directement avec le développeur.</span></div>
+      </div>
+      <div class="pourquoi-item">
+        <span class="pourquoi-check">✓</span>
+        <div class="pourquoi-text"><strong>Tarifs transparents</strong><span>Devis fixe, pas de surprise en cours de projet. Paiement en plusieurs fois possible.</span></div>
+      </div>
+      <div class="pourquoi-item">
+        <span class="pourquoi-check">✓</span>
+        <div class="pourquoi-text"><strong>Réactivité garantie</strong><span>Réponse sous 48h, points d'avancement réguliers tout au long du projet.</span></div>
+      </div>
+      <div class="pourquoi-item">
+        <span class="pourquoi-check">✓</span>
+        <div class="pourquoi-text"><strong>Stack moderne & pérenne</strong><span>React, Python, Supabase, Vercel — des technologies stables avec un fort écosystème.</span></div>
+      </div>
+      <div class="pourquoi-item">
+        <span class="pourquoi-check">✓</span>
+        <div class="pourquoi-text"><strong>Expérience terrain</strong><span>9 ans d'expérience IT, des dizaines d'outils développés et mis en production.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <p class="section-label">Questions fréquentes</p>
+    <div class="gold-line"></div>
+    <h2 class="section-title">Vous avez des questions ?</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <p class="faq-q">Comment se déroule le paiement ?</p>
+        <p class="faq-a">50% à la commande, 50% à la livraison. Pour les projets plus courts, le paiement intégral à la livraison est possible. Paiement par virement bancaire ou PayPal.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Travaillez-vous avec des clients hors de Normandie ?</p>
+        <p class="faq-a">Oui, 100% en télétravail. Les échanges se font par e-mail, visio ou messagerie selon votre préférence. Je travaille avec des clients partout en France et à l'international.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Quels sont les délais de réalisation ?</p>
+        <p class="faq-a">Un site vitrine simple : 5 à 10 jours. Une application web : 2 à 6 semaines. Un script Python : 2 à 7 jours. Les délais sont précisés dans le devis et respectés.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Est-ce que je reçois le code source ?</p>
+        <p class="faq-a">Oui. Vous recevez systématiquement le code source complet, hébergé sur un dépôt GitHub privé transféré à votre compte à la livraison. Le projet vous appartient entièrement.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Proposez-vous de la maintenance après livraison ?</p>
+        <p class="faq-a">Un support de 30 jours est inclus après livraison pour corriger d'éventuels bugs. Pour une maintenance longue durée ou des évolutions, un devis complémentaire est établi.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Mon projet est-il trop petit ou trop grand ?</p>
+        <p class="faq-a">Aucun projet n'est trop petit — une simple page ou un script de 50 lignes sont les bienvenus. Pour les projets très complexes (équipe entière, architecture distribuée), je peux vous orienter vers les ressources adaptées.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="container contact-inner">
+    <p class="section-label" style="margin-bottom:1rem;">Parlons de votre projet</p>
+    <h2 class="contact-title">Prêt à lancer<br>votre <span>projet</span> ?</h2>
+    <p class="contact-sub">Décrivez votre projet par e-mail — type de projet, ce que vous voulez faire, votre délai. Je vous réponds avec un devis gratuit sous 48h ouvrées.</p>
+    <a href="mailto:rafteldeveloppement@proton.me?subject=Demande de devis — Projet sur mesure&body=Bonjour,%0A%0AJe souhaite vous soumettre un projet :%0A%0AType de projet (site, script, app...) : %0ADescription de ce que je veux : %0ADélai souhaité : %0ABudget approximatif (si vous en avez une idée) : %0A%0ACordialement" class="contact-email">
+      ✉ rafteldeveloppement@proton.me
+    </a>
+    <br>
+    <p class="contact-note">Réponse sous 48h · Devis 100% gratuit et sans engagement</p>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">RAFTEL DÉVELOPPEMENT</a>
+  <ul class="footer-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="mentions-legales.html">Mentions légales</a></li>
+    <li><a href="cgv.html">CGV</a></li>
+    <li><a href="confidentialite.html">Confidentialité</a></li>
+  </ul>
+</footer>
+</body>
+</html>

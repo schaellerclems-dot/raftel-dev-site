@@ -517,13 +517,18 @@
     from { opacity: 0; transform: translateY(28px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.visible { opacity: 1; transform: none; }
 
+
+
+  .footer-socials { display: flex; gap: 0.8rem; align-items: center; }
+  .social-link {
+    color: var(--text-muted); transition: color 0.2s;
+    display: flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: var(--dark-2);
+  }
+  .social-link:hover { color: var(--gold); border-color: rgba(232,160,32,0.3); }
   /* ── GOLD LINE SEPARATOR ── */
   .gold-line {
     width: 60px; height: 2px;
@@ -555,6 +560,7 @@
     <li><a href="#saas">SaaS</a></li>
     <li><a href="#scripts">Scripts</a></li>
     <li><a href="#guides">Guides IT</a></li>
+    <li><a href="#sur-mesure">Sur mesure</a></li>
     <li><a href="#about">À propos</a></li>
   </ul>
   <a href="https://rafteldev.gumroad.com" target="_blank" class="nav-cta">Voir la boutique</a>
@@ -597,14 +603,14 @@
   <div class="section-inner">
 
     <!-- SaaS -->
-    <div id="saas" class="products-header reveal" style="padding-top: 2rem;">
+    <div id="saas" class="products-header" style="padding-top: 2rem;">
       <p class="section-label">SaaS · Applications Web</p>
       <div class="gold-line"></div>
       <h2 class="section-title">Applications & abonnements</h2>
       <p class="section-desc">Des SaaS prêts à l'emploi avec IA intégrée, accessibles depuis n'importe quel navigateur.</p>
     </div>
     <div class="products-grid" style="margin-bottom: 5rem;">
-      <a href="https://rafteldev.gumroad.com/l/dyrefy" target="_blank" class="product-card featured reveal">
+      <a href="https://rafteldev.gumroad.com/l/dyrefy" target="_blank" class="product-card featured">
         <div>
           <span class="product-tag tag-saas">SaaS · Pro</span>
           <h3 class="product-name">Annonzia Pro</h3>
@@ -613,28 +619,32 @@
         <div class="product-footer" style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-top: none; padding-top: 0;">
           <span class="product-price">9,99€ / mois</span>
           <span class="product-link">S'abonner</span>
+          <a href="https://annonzia.fr" target="_blank" onclick="event.stopPropagation()" style="font-size: 0.78rem; color: var(--text-muted); text-decoration: none;">🔗 annonzia.fr</a>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/rwwpd" target="_blank" class="product-card reveal">
+      <a href="https://rafteldev.gumroad.com/l/rwwpd" target="_blank" class="product-card">
         <span class="product-tag tag-saas">SaaS · Starter</span>
         <h3 class="product-name">Annonzia Starter</h3>
         <p class="product-desc">Accès à l'IA de rédaction d'annonces pour débuter. Idéal pour tester la puissance du générateur avant de passer au plan Pro.</p>
-        <div class="product-footer">
-          <span class="product-price">3,99€ / mois</span>
-          <span class="product-link">Commencer</span>
+        <div class="product-footer" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <span class="product-price">3,99€ / mois</span>
+            <span class="product-link">Commencer</span>
+          </div>
+          <a href="https://annonzia.fr" target="_blank" onclick="event.stopPropagation()" style="font-size: 0.78rem; color: var(--text-muted); text-decoration: none;">🔗 annonzia.fr</a>
         </div>
       </a>
     </div>
 
     <!-- Scripts Python -->
-    <div id="scripts" class="products-header reveal">
+    <div id="scripts" class="products-header">
       <p class="section-label">Scripts · Python</p>
       <div class="gold-line"></div>
       <h2 class="section-title">Automatisation & analyse</h2>
       <p class="section-desc">Des scripts Python prêts à lancer pour trader, scraper et analyser les marchés sans effort.</p>
     </div>
     <div class="products-grid" style="margin-bottom: 5rem;">
-      <a href="https://rafteldev.gumroad.com/l/market-analyzer-pro" target="_blank" class="product-card featured reveal">
+      <a href="market-analyzer-pro.html" class="product-card featured">
         <div>
           <span class="product-tag tag-python">Python · Trading</span>
           <h3 class="product-name">Market Analyzer PRO</h3>
@@ -645,7 +655,7 @@
           <span class="product-link">Voir sur Gumroad</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/ipkmu" target="_blank" class="product-card reveal">
+      <a href="ebay-deal-hunter.html" class="product-card">
         <span class="product-tag tag-python">Python · eBay</span>
         <h3 class="product-name">eBay Deal Hunter v2</h3>
         <p class="product-desc">Scraping automatisé de 54 recherches sur 18 catégories eBay. Calcul de marges, alertes e-mail, mode boucle auto. Trouvez les meilleures affaires en temps réel.</p>
@@ -657,14 +667,14 @@
     </div>
 
     <!-- Guides IT -->
-    <div id="guides" class="products-header reveal">
+    <div id="guides" class="products-header">
       <p class="section-label">Guides · IT & Dev</p>
       <div class="gold-line"></div>
       <h2 class="section-title">Guides professionnels</h2>
       <p class="section-desc">Des guides complets en .docx pour maîtriser les outils IT, la cybersécurité et le développement sans payer une formation.</p>
     </div>
     <div class="products-grid">
-      <a href="https://rafteldev.gumroad.com/l/fivem" target="_blank" class="product-card reveal">
+      <a href="guide-fivem.html" class="product-card">
         <span class="product-tag tag-guide">Guide · FiveM</span>
         <h3 class="product-name">Créer son serveur GTA RP</h3>
         <p class="product-desc">FiveM de A à Z — QBCore + txAdmin. Installation, configuration, scripts et déploiement complet de ton serveur GTA RP.</p>
@@ -673,7 +683,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/saas" target="_blank" class="product-card reveal">
+      <a href="guide-saas.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Dev</span>
         <h3 class="product-name">Lancer un SaaS en 7 jours</h3>
         <p class="product-desc">Supabase + React de A à Z — authentification, base de données, déploiement et monétisation. Le guide complet pour lancer vite.</p>
@@ -682,7 +692,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/pfsense" target="_blank" class="product-card reveal">
+      <a href="guide-pfsense.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Réseau</span>
         <h3 class="product-name">Sécuriser un réseau PME — pfSense</h3>
         <p class="product-desc">VLANs, VPN, IDS, Zero Touch — configuration complète d'un réseau PME sécurisé avec pfSense.</p>
@@ -691,7 +701,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/powershell" target="_blank" class="product-card reveal">
+      <a href="guide-powershell.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Sysadmin</span>
         <h3 class="product-name">PowerShell pour Sysadmins</h3>
         <p class="product-desc">Automatiser son infrastructure Windows — scripts, gestion des utilisateurs, GPO et reporting. Du basique à l'avancé.</p>
@@ -700,7 +710,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/cybersecurite" target="_blank" class="product-card reveal">
+      <a href="guide-cybersecurite.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Cyber</span>
         <h3 class="product-name">Cybersécurité pour TPE/PME</h3>
         <p class="product-desc">Les 20 mesures indispensables pour sécuriser son entreprise. Accessible sans être expert, applicable immédiatement.</p>
@@ -709,7 +719,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/activedirectory" target="_blank" class="product-card reveal">
+      <a href="guide-active-directory.html" class="product-card">
         <span class="product-tag tag-guide">Guide · IT</span>
         <h3 class="product-name">Active Directory de A à Z</h3>
         <p class="product-desc">Monter un AD en PME — installation, OUs, groupes, stratégies et sécurisation. Guide pratique complet.</p>
@@ -718,7 +728,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/zkgmva" target="_blank" class="product-card reveal">
+      <a href="guide-n8n.html" class="product-card">
         <span class="product-tag tag-guide">Guide · No-code</span>
         <h3 class="product-name">n8n de A à Z</h3>
         <p class="product-desc">Automatiser sans coder — alternative open source à Zapier. Workflows, webhooks, intégrations et déploiement self-hosted.</p>
@@ -727,7 +737,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/stripe" target="_blank" class="product-card reveal">
+      <a href="guide-stripe.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Dev</span>
         <h3 class="product-name">Stripe de A à Z</h3>
         <p class="product-desc">Paiements, abonnements et portail client — intégrer Stripe dans ton app de A à Z, avec webhooks et gestion des erreurs.</p>
@@ -736,7 +746,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/rgpd" target="_blank" class="product-card reveal">
+      <a href="guide-rgpd.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Juridique</span>
         <h3 class="product-name">RGPD en PME</h3>
         <p class="product-desc">Se mettre en conformité sans cabinet juridique — registre de traitement, politique de confidentialité, gestion des cookies et droits des utilisateurs.</p>
@@ -745,7 +755,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/microsoft365" target="_blank" class="product-card reveal">
+      <a href="guide-microsoft365.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Cloud</span>
         <h3 class="product-name">Microsoft 365 pour TPE/PME</h3>
         <p class="product-desc">Configuration, sécurité et productivité — Teams, SharePoint, Exchange, MFA et bonnes pratiques pour les petites structures.</p>
@@ -754,7 +764,7 @@
           <span class="product-link">Acheter</span>
         </div>
       </a>
-      <a href="https://rafteldev.gumroad.com/l/gpo" target="_blank" class="product-card reveal">
+      <a href="guide-gpo.html" class="product-card">
         <span class="product-tag tag-guide">Guide · Sysadmin</span>
         <h3 class="product-name">Déployer et gérer les GPO</h3>
         <p class="product-desc">Du basique au PowerShell — créer, lier et déboguer les stratégies de groupe en entreprise. Exemples concrets inclus.</p>
@@ -774,12 +784,12 @@
 <section id="about">
   <div class="section-inner">
     <div class="about-grid">
-      <div class="about-visual reveal">
+      <div class="about-visual">
         <div class="about-hexagon">
           <span class="about-initial">R</span>
         </div>
       </div>
-      <div class="about-content reveal">
+      <div class="about-content">
         <p class="section-label">À propos</p>
         <div class="gold-line"></div>
         <h2 class="section-title">Construit par un maker,<br>pour les makers</h2>
@@ -804,10 +814,55 @@
   </div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- DEVELOPPEMENT SUR MESURE -->
+<section id="sur-mesure" style="padding: 7rem 0; background: var(--dark-2); border-top: 1px solid rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.04);">
+  <div class="section-inner">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+      <div>
+        <p class="section-label">Développement sur mesure</p>
+        <div class="gold-line"></div>
+        <h2 class="section-title">Un projet spécifique ?<br>Je le construis pour vous.</h2>
+        <p class="section-desc" style="margin-bottom: 1.2rem;">
+          Site internet, outil d'automatisation, script Python, application web ou SaaS — si vous avez un besoin précis, je développe une solution sur mesure adaptée à votre contexte.
+        </p>
+        <p class="section-desc" style="margin-bottom: 2.5rem;">
+          Devis gratuit, réponse sous 48h. Pas de template générique, pas de solution préfabriquée.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="developpement-sur-mesure.html" class="btn-primary" style="font-size: 0.88rem; padding: 0.9rem 2rem;">Voir les prestations</a>
+          <a href="mailto:rafteldeveloppement@proton.me?subject=Demande de devis" class="btn-ghost" style="font-size: 0.88rem; padding: 0.9rem 2rem;">Demander un devis</a>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div style="background: var(--dark-3); border: 1px solid rgba(232,160,32,0.12); border-radius: 8px; padding: 1.5rem;">
+          <span style="font-size: 1.5rem; display: block; margin-bottom: 0.8rem;">🌐</span>
+          <p style="font-family: 'Cinzel', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.4rem;">Sites internet</p>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">Vitrine, landing page, e-commerce</p>
+        </div>
+        <div style="background: var(--dark-3); border: 1px solid rgba(232,160,32,0.12); border-radius: 8px; padding: 1.5rem;">
+          <span style="font-size: 1.5rem; display: block; margin-bottom: 0.8rem;">⚙️</span>
+          <p style="font-family: 'Cinzel', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.4rem;">Scripts Python</p>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">Automatisation, scraping, analyse</p>
+        </div>
+        <div style="background: var(--dark-3); border: 1px solid rgba(232,160,32,0.12); border-radius: 8px; padding: 1.5rem;">
+          <span style="font-size: 1.5rem; display: block; margin-bottom: 0.8rem;">🚀</span>
+          <p style="font-family: 'Cinzel', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.4rem;">SaaS & Web Apps</p>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">React, Supabase, IA intégrée</p>
+        </div>
+        <div style="background: var(--dark-3); border: 1px solid rgba(232,160,32,0.12); border-radius: 8px; padding: 1.5rem;">
+          <span style="font-size: 1.5rem; display: block; margin-bottom: 0.8rem;">🤖</span>
+          <p style="font-family: 'Cinzel', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.4rem;">Outils IA</p>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">Intégration Claude, OpenAI, GPT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section id="cta">
   <div class="cta-glow"></div>
-  <div class="section-inner cta-inner reveal">
+  <div class="section-inner cta-inner">
     <p class="section-label" style="margin-bottom: 1.5rem;">Prêt à démarrer ?</p>
     <h2 class="cta-title">Rejoins la <span>boutique</span><br>Raftel Développement</h2>
     <p class="cta-sub">Scripts, SaaS et guides disponibles immédiatement sur Gumroad. Paiement sécurisé, accès instantané.</p>
@@ -822,42 +877,25 @@
   <a href="#" class="footer-logo">RAFTEL DÉVELOPPEMENT</a>
   <ul class="footer-links">
     <li><a href="https://rafteldev.gumroad.com" target="_blank">Gumroad</a></li>
+    <li><a href="services.html">Développement web</a></li>
     <li><a href="mentions-legales.html">Mentions légales</a></li>
     <li><a href="cgv.html">CGV</a></li>
     <li><a href="confidentialite.html">Confidentialité</a></li>
-    <li><a href="mailto:contact@rafteldev.fr">Contact</a></li>
+    <li><a href="mailto:rafteldeveloppement@proton.me">Contact</a></li>
   </ul>
-  <span class="footer-right">© 2025 Raftel Développement</span>
+  <div class="footer-socials">
+    <a href="https://www.tiktok.com/@rafteldev" target="_blank" class="social-link" title="TikTok">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+    </a>
+    <a href="https://github.com/schaellerclems-dot" target="_blank" class="social-link" title="GitHub">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+    </a>
+    <a href="https://rafteldev.gumroad.com" target="_blank" class="social-link" title="Gumroad">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm4.25 13.4h-2.4v2.4h-3.7v-2.4H7.75V9.7h2.4V7.3h3.7v2.4h2.4v3.7z"/></svg>
+    </a>
+  </div>
+  <span class="footer-right">© 2026 Raftel Développement</span>
 </footer>
 
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-
-  function showVisible() {
-    reveals.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight + 200) {
-        el.classList.add('visible');
-      }
-    });
-  }
-
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-
-  reveals.forEach(el => io.observe(el));
-
-  window.addEventListener('hashchange', () => setTimeout(showVisible, 150));
-  window.addEventListener('load', () => setTimeout(showVisible, 100));
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', () => setTimeout(showVisible, 450));
-  });
-</script>
 </body>
 </html>
