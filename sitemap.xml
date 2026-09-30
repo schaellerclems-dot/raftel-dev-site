@@ -15,6 +15,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Application -->
+  <url>
+    <loc>https://rafteldeveloppement.fr/deuxsecondes.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Pages produits — Scripts Python -->
   <url>
     <loc>https://rafteldeveloppement.fr/market-analyzer-pro.html</loc>
