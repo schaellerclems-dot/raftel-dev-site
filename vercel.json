@@ -1,0 +1,124 @@
+{
+  "redirects": [
+    {
+      "source": "/guide-active-directory.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-cybersecurite.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-fivem.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-gpo.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-microsoft365.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-n8n.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-pfsense.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-powershell.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-rgpd.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-saas.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-stripe.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/market-analyzer-pro.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-active-directory",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-cybersecurite",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-fivem",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-gpo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-microsoft365",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-n8n",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-pfsense",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-powershell",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-rgpd",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-saas",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-stripe",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/market-analyzer-pro",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

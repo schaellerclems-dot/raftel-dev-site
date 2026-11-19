@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Politique de Confidentialité — Raftel Développement</title>
-<meta name="description" content="Politique de confidentialité de Raftel Développement : données collectées, finalités et droits RGPD.">
+<meta name="description" content="Politique de confidentialité du site rafteldeveloppement.fr : données traitées, mesure d'audience sans cookie et droits RGPD.">
 <meta name="robots" content="noindex, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +42,11 @@
   .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.8rem; transition: color 0.2s; }
   .footer-links a:hover { color: var(--gold); }
   @media (max-width: 600px) { nav { padding: 1rem 1.5rem; } table { font-size: 0.8rem; } footer { flex-direction: column; gap: 1rem; text-align: center; } }
+  .highlight { background: rgba(232,160,32,0.08); border-left: 3px solid var(--gold); padding: 1rem 1.5rem; border-radius: 0 6px 6px 0; margin: 1.5rem 0; }
+  .highlight p { margin: 0; color: var(--text); }
+
+.footer-links{flex-wrap:wrap;justify-content:center}
+@media(max-width:600px){table{display:block;overflow-x:auto}.info-block,.container p,.container li{overflow-wrap:anywhere}}
 </style>
 </head>
 <body>
@@ -53,82 +58,71 @@
 <div class="container">
   <p class="page-label">Données personnelles · RGPD</p>
   <h1>Politique de Confidentialité</h1>
-  <p class="updated">Dernière mise à jour : mars 2025</p>
+  <p class="updated">Dernière mise à jour : 19 novembre 2026</p>
   <div class="gold-line"></div>
 
-  <p>Raftel Développement s'engage à protéger la vie privée de ses utilisateurs et clients conformément au Règlement Général sur la Protection des Données (RGPD - Règlement UE 2016/679) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée.</p>
-
-  <h2>1. Responsable du traitement</h2>
-  <div class="info-block">
-    <p><strong>Identité :</strong> Raftel Développement — Raftel Développement</p>
-    <p><strong>Adresse :</strong> France</p>
-    <p><strong>E-mail :</strong> <a href="mailto:rafteldeveloppement@proton.me">rafteldeveloppement@proton.me</a></p>
+  <div class="highlight">
+    <p><strong>En bref :</strong> ce site ne dépose aucun cookie publicitaire et ne vous demande aucune inscription. Nous mesurons seulement l'audience de façon anonyme, et nous ne recevons vos coordonnées que si vous nous écrivez.</p>
   </div>
 
-  <h2>2. Données collectées</h2>
-  <p>Raftel Développement collecte uniquement les données strictement nécessaires :</p>
+  <div class="info-block">
+    <p><strong>Responsable du traitement :</strong> Raftel Développement — entreprise individuelle, SIRET 102 032 976 00031</p>
+    <p><strong>Adresse :</strong> Rue de l'Alizé, 27370 Saint-Pierre-des-Fleurs, France</p>
+    <p><strong>Contact :</strong> <a href="mailto:contact@rafteldeveloppement.fr">contact@rafteldeveloppement.fr</a></p>
+  </div>
+
+  <p>Cette politique concerne uniquement le site rafteldeveloppement.fr. Les données traitées par les applications sont décrites dans leurs propres politiques : <a href="deuxsecondes-confidentialite.html">DeuxSecondes</a>, <a href="lunilo-confidentialite.html">Lunilo</a> (et Sentikel à sa sortie).</p>
+
+  <h2>1. Données traitées</h2>
   <table>
     <thead>
-      <tr><th>Donnée</th><th>Source</th><th>Finalité</th><th>Durée de conservation</th></tr>
+      <tr><th>Donnée</th><th>Origine</th><th>Finalité</th><th>Conservation</th></tr>
     </thead>
     <tbody>
-      <tr><td>Adresse e-mail</td><td>Gumroad (achat)</td><td>Livraison du produit, support client</td><td>3 ans après le dernier achat</td></tr>
-      <tr><td>Nom / prénom</td><td>Gumroad (achat)</td><td>Identification de la commande</td><td>3 ans après le dernier achat</td></tr>
-      <tr><td>Adresse IP</td><td>Vercel (hébergeur)</td><td>Sécurité, logs techniques</td><td>30 jours (logs serveur)</td></tr>
-      <tr><td>Données de navigation</td><td>Vercel Analytics (optionnel)</td><td>Statistiques de visite anonymisées</td><td>90 jours</td></tr>
+      <tr><td>Adresse e-mail, nom et contenu de votre message</td><td>E-mail que vous nous envoyez (contact, liste d'attente, demande de test ou de devis)</td><td>Vous répondre, vous prévenir de la sortie d'une application si vous l'avez demandé, établir un devis</td><td>3 ans après le dernier échange</td></tr>
+      <tr><td>Statistiques de visite (pages vues, pays, type d'appareil, site d'origine)</td><td>Vercel Web Analytics</td><td>Mesurer l'audience du site de façon anonyme et agrégée</td><td>Données agrégées, sans identification des visiteurs</td></tr>
+      <tr><td>Journaux techniques (adresse IP, date, page demandée)</td><td>Hébergeur (Vercel)</td><td>Sécurité et bon fonctionnement du site</td><td>Durée limitée fixée par l'hébergeur</td></tr>
     </tbody>
   </table>
-  <p>Aucune donnée sensible (bancaire, santé, etc.) n'est collectée directement par Raftel Développement. Les paiements sont intégralement gérés par Gumroad via Stripe.</p>
 
-  <h2>3. Bases légales du traitement</h2>
+  <h2>2. Cookies</h2>
+  <p>Ce site n'utilise aucun cookie publicitaire ni traceur de réseaux sociaux. La mesure d'audience Vercel Web Analytics fonctionne sans cookie et ne permet pas d'identifier les visiteurs ; elle ne nécessite donc pas de consentement préalable.</p>
+
+  <h2>3. Bases légales</h2>
   <ul>
-    <li><strong>Exécution du contrat :</strong> traitement de la commande, livraison du produit numérique, support</li>
-    <li><strong>Intérêt légitime :</strong> sécurité du site, prévention de la fraude, statistiques anonymisées</li>
-    <li><strong>Obligation légale :</strong> conservation des données de facturation (10 ans, Code de commerce)</li>
+    <li>Répondre à vos messages et vous prévenir d'une sortie : votre demande et votre consentement, que vous pouvez retirer à tout moment ;</li>
+    <li>Devis : mesures précontractuelles prises à votre demande ;</li>
+    <li>Mesure d'audience et sécurité : intérêt légitime à faire fonctionner et améliorer le site.</li>
   </ul>
 
-  <h2>4. Partage des données</h2>
-  <p>Les données ne sont jamais vendues ni cédées à des tiers à des fins commerciales. Elles peuvent être partagées uniquement avec :</p>
+  <h2>4. Destinataires et transferts</h2>
+  <p>Vos données ne sont ni vendues ni louées. Elles sont uniquement accessibles à Raftel Développement et à ses prestataires techniques :</p>
   <ul>
-    <li><strong>Gumroad Inc.</strong> (plateforme de vente) — politique de confidentialité : <a href="https://gumroad.com/privacy" target="_blank">gumroad.com/privacy</a></li>
-    <li><strong>Vercel Inc.</strong> (hébergement) — politique de confidentialité : <a href="https://vercel.com/legal/privacy-policy" target="_blank">vercel.com/legal/privacy-policy</a></li>
-    <li><strong>Stripe Inc.</strong> (paiement via Gumroad) — politique de confidentialité : <a href="https://stripe.com/fr/privacy" target="_blank">stripe.com/fr/privacy</a></li>
+    <li><strong>Vercel Inc.</strong> (hébergement et mesure d'audience) — <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">politique de confidentialité</a> ;</li>
+    <li><strong>Proton AG</strong> (messagerie, Suisse) pour les e-mails reçus — <a href="https://proton.me/legal/privacy" target="_blank" rel="noopener">politique de confidentialité</a>.</li>
   </ul>
-  <p>Ces prestataires agissent en tant que sous-traitants et sont liés par des obligations de confidentialité. Certains d'entre eux (Gumroad, Stripe) sont basés aux États-Unis et font l'objet de garanties appropriées (clauses contractuelles types de la Commission européenne).</p>
+  <p>Vercel étant établie aux États-Unis, les transferts éventuels sont encadrés par les garanties prévues par le RGPD (clauses contractuelles types de la Commission européenne).</p>
 
-  <h2>5. Cookies</h2>
-  <p>Le site rafteldeveloppement.fr n'utilise pas de cookies publicitaires ou de tracking tiers. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être déposés (session, sécurité). Ces cookies ne nécessitent pas de consentement préalable.</p>
-  <p>La plateforme Gumroad peut déposer ses propres cookies lors de votre visite sur la boutique. Vous pouvez consulter leur politique à ce sujet sur <a href="https://gumroad.com/privacy" target="_blank">gumroad.com/privacy</a>.</p>
+  <h2>5. Vos droits</h2>
+  <p>Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité de vos données. Pour les exercer, écrivez à <a href="mailto:contact@rafteldeveloppement.fr">contact@rafteldeveloppement.fr</a>. Nous répondons dans un délai d'un mois.</p>
+  <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
 
-  <h2>6. Vos droits</h2>
-  <p>Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :</p>
-  <ul>
-    <li><strong>Droit d'accès :</strong> obtenir une copie de vos données</li>
-    <li><strong>Droit de rectification :</strong> corriger des données inexactes</li>
-    <li><strong>Droit à l'effacement :</strong> demander la suppression de vos données</li>
-    <li><strong>Droit à la portabilité :</strong> recevoir vos données dans un format structuré</li>
-    <li><strong>Droit d'opposition :</strong> vous opposer à certains traitements</li>
-    <li><strong>Droit à la limitation :</strong> limiter temporairement le traitement</li>
-  </ul>
-  <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:rafteldeveloppement@proton.me">rafteldeveloppement@proton.me</a>. Nous répondrons dans un délai de 30 jours. Une pièce d'identité pourra être demandée pour vérifier votre identité.</p>
-  <p>Vous pouvez également introduire une réclamation auprès de la CNIL : <a href="https://www.cnil.fr" target="_blank">cnil.fr</a></p>
+  <h2>6. Modifications</h2>
+  <p>Cette politique peut évoluer. La date de dernière mise à jour figure en haut de cette page.</p>
 
-  <h2>7. Sécurité des données</h2>
-  <p>Raftel Développement met en œuvre les mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte ou destruction. Le site est servi en HTTPS (connexion chiffrée). Les données de paiement sont gérées exclusivement par Gumroad/Stripe et ne transitent jamais par nos serveurs.</p>
-
-  <h2>8. Modifications</h2>
-  <p>La présente politique peut être mise à jour à tout moment. La date de dernière mise à jour est indiquée en haut de ce document. En cas de modifications substantielles, les utilisateurs en seront informés par e-mail si une relation commerciale existe.</p>
 </div>
 
 <footer>
   <a href="index.html" class="footer-logo">RAFTEL DÉVELOPPEMENT</a>
   <ul class="footer-links">
     <li><a href="index.html">Accueil</a></li>
-    <li><a href="mentions-legales.html">Mentions légales</a></li>
-    <li><a href="cgv.html">CGV</a></li>
-    <li><a href="confidentialite.html">Confidentialité</a></li>
+    <li><a href="deuxsecondes.html">DeuxSecondes</a></li>
+    <li><a href="sentikel.html">Sentikel</a></li>
+    <li><a href="lunilo.html">Lunilo</a></li>
     <li><a href="legal.html">Documents légaux</a></li>
+    <li><a href="mailto:contact@rafteldeveloppement.fr">Contact</a></li>
   </ul>
 </footer>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

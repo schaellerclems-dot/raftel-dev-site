@@ -7,10 +7,10 @@
 <meta name="description" content="Sentikel : application Android qui scanne tes tickets de caisse et factures par IA, suit automatiquement les dates de garantie et t'alerte avant qu'elles n'expirent. Disponible prochainement.">
 <meta name="keywords" content="suivi garantie application, scan ticket de caisse IA, gestion factures android, rappel garantie expiration, Sentikel">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://rafteldeveloppement.fr/sentikel.html">
+<link rel="canonical" href="https://www.rafteldeveloppement.fr/sentikel.html">
 <meta property="og:title" content="Sentikel — Suivi de garanties par IA | Raftel Développement">
 <meta property="og:description" content="Application Android qui scanne tes tickets de caisse et factures par IA, suit automatiquement les dates de garantie et t'alerte avant qu'elles n'expirent. Disponible prochainement.">
-<meta property="og:url" content="https://rafteldeveloppement.fr/sentikel.html">
+<meta property="og:url" content="https://www.rafteldeveloppement.fr/sentikel.html">
 <meta property="og:type" content="product">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2307080f'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='top' font-family='serif' fill='%23e8a020'>R</text></svg>">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--gold:#e8a020;--gold-light:#f5c842;--gold-dim:#b87818;--dark:#07080f;--dark-2:#0e1020;--dark-3:#161828;--text:#e8e6df;--text-muted:#8a8880;--blue:#4fc3f7}
+:root{--gold:#e8a020;--gold-light:#f5c842;--gold-dim:#b87818;--dark:#07080f;--dark-2:#0e1020;--dark-3:#161828;--text:#e8e6df;--text-muted:#8a8880;--blue:#3ec98a}
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text);font-family:'Syne',sans-serif;font-size:16px;line-height:1.75;overflow-x:hidden}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;background:rgba(7,8,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(232,160,32,0.12)}
@@ -30,11 +30,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .breadcrumb a{color:var(--text-muted);text-decoration:none}
 .breadcrumb a:hover{color:var(--gold)}
 .breadcrumb span{margin:0 0.5rem;opacity:0.4}
-.product-type{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(79,195,247,0.3);padding:0.4rem 1rem;border-radius:2px;margin-bottom:1.5rem}
+.product-type{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(62,201,138,0.3);padding:0.4rem 1rem;border-radius:2px;margin-bottom:1.5rem}
 .soon-badge{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);background:rgba(232,160,32,0.1);border:1px solid rgba(232,160,32,0.3);padding:0.5rem 1rem;border-radius:2px;margin-bottom:2rem}
 .soon-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
 h1{font-family:'Cinzel',serif;font-size:clamp(2rem,5vw,4rem);font-weight:900;line-height:1.05;margin-bottom:1.5rem}
-h1 span{background:linear-gradient(135deg,var(--blue),#8fe0ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+h1 span{background:linear-gradient(135deg,var(--blue),#8ff0c0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-desc{font-size:1.1rem;color:var(--text-muted);line-height:1.8;max-width:640px;margin-bottom:3rem}
 .cta-block{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:4rem}
 .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-dim));color:var(--dark);padding:1rem 2.5rem;border-radius:4px;font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;transition:transform 0.18s,box-shadow 0.18s;box-shadow:0 4px 24px rgba(232,160,32,0.25)}
@@ -50,7 +50,7 @@ h2{font-family:'Cinzel',serif;font-size:1.6rem;font-weight:700;margin-bottom:1.5
 .feature-title{font-weight:700;font-size:0.95rem;margin-bottom:0.5rem}
 .feature-desc{font-size:0.88rem;color:var(--text-muted);line-height:1.65}
 .apps-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem;margin:2rem 0 3rem}
-.app-card{background:var(--dark-2);border:1px solid rgba(79,195,247,0.15);border-radius:8px;padding:1.8rem}
+.app-card{background:var(--dark-2);border:1px solid rgba(62,201,138,0.15);border-radius:8px;padding:1.8rem}
 .app-card .app-label{font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:0.6rem}
 .app-card h3{font-family:'Cinzel',serif;font-size:1.1rem;margin-bottom:0.8rem}
 .app-card ul{list-style:none;display:flex;flex-direction:column;gap:0.45rem}
@@ -64,7 +64,7 @@ h2{font-family:'Cinzel',serif;font-size:1.6rem;font-weight:700;margin-bottom:1.5
 .faq-item{border-bottom:1px solid rgba(255,255,255,0.06);padding:1.2rem 0}
 .faq-q{font-weight:700;font-size:0.95rem;margin-bottom:0.5rem}
 .faq-a{font-size:0.9rem;color:var(--text-muted);line-height:1.7}
-.cta-bottom{background:linear-gradient(135deg,var(--dark-3),var(--dark-2));border:1px solid rgba(79,195,247,0.2);border-radius:8px;padding:3rem 2.5rem;text-align:center;margin-top:4rem}
+.cta-bottom{background:linear-gradient(135deg,var(--dark-3),var(--dark-2));border:1px solid rgba(62,201,138,0.2);border-radius:8px;padding:3rem 2.5rem;text-align:center;margin-top:4rem}
 .cta-bottom h3{font-family:'Cinzel',serif;font-size:1.5rem;font-weight:700;margin-bottom:0.8rem}
 .cta-bottom p{color:var(--text-muted);margin-bottom:2rem;font-size:0.95rem}
 footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1}
@@ -73,6 +73,35 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
 .footer-links a{color:var(--text-muted);text-decoration:none;font-size:0.8rem;transition:color 0.2s}
 .footer-links a:hover{color:var(--gold)}
 @media(max-width:600px){nav{padding:1rem 1.5rem}.hero{padding:8rem 1.5rem 3rem}.content{padding:0 1.5rem 4rem}.cta-block{flex-direction:column;align-items:flex-start}footer{flex-direction:column;gap:1.5rem;text-align:center}}
+
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0 3rem}
+.step{background:var(--dark-2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.5rem;position:relative}
+.step .n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:0.85rem;margin-bottom:0.8rem;background:rgba(232,160,32,0.15);color:var(--gold)}
+.step b{display:block;margin-bottom:0.35rem}
+.step p{font-size:0.88rem;color:var(--text-muted);line-height:1.6}
+.shots-phone{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:1.5rem 0 2.5rem}
+.shots-wide{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin:1.5rem 0 1rem}
+figure.shot{margin:0}
+figure.shot img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 16px 40px rgba(0,0,0,0.45);background:#fff}
+.shots-phone figure.shot img{border-radius:20px;border:7px solid #1b1d2a}
+figure.shot figcaption{font-size:0.85rem;color:var(--text-muted);margin-top:0.7rem;line-height:1.5}
+figure.shot figcaption b{color:var(--text);display:block}
+.shots-title{font-weight:700;font-size:1rem;margin-top:1rem}
+.small-note{font-size:0.8rem;color:var(--text-muted);margin-bottom:3rem}
+.example{background:var(--dark-2);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:1.8rem;margin:1.5rem 0 3rem;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start}
+.example img,.example .ico{width:72px;height:72px;border-radius:18px}
+.example .ico{display:grid;place-items:center;font-size:2rem;background:linear-gradient(135deg,#7c4dff,#b478ff)}
+.example .tag{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);border:1px solid rgba(255,255,255,0.15);border-radius:999px;padding:0.2rem 0.7rem;margin-bottom:0.6rem}
+.example ol{margin:0.6rem 0 0 1.2rem;color:var(--text-muted);font-size:0.92rem;display:flex;flex-direction:column;gap:0.4rem}
+.example ol b{color:var(--text)}
+.privacy-box{background:rgba(180,120,255,0.07);border:1px solid rgba(180,120,255,0.25);border-radius:10px;padding:1.5rem 1.8rem;margin:2rem 0 3rem}
+.privacy-box p{color:var(--text-muted);font-size:0.92rem;margin-bottom:0.6rem}
+.privacy-box a{color:var(--blue)}
+.btn-ghost2{display:inline-block;border:1px solid rgba(232,160,32,0.5);color:var(--gold);padding:1rem 2rem;border-radius:4px;font-weight:800;font-size:0.9rem;text-decoration:none}
+@media(max-width:760px){.steps3,.shots-wide{grid-template-columns:1fr}.shots-phone{grid-template-columns:1fr 1fr}.example{grid-template-columns:1fr}}
+
+.footer-links{flex-wrap:wrap;justify-content:center}
+@media(max-width:600px){table{display:block;overflow-x:auto}.info-block,.container p,.container li{overflow-wrap:anywhere}}
 </style>
 </head>
 <body>
@@ -84,11 +113,12 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
 <div class="hero">
   <p class="breadcrumb"><a href="index.html">Accueil</a><span>›</span><a href="index.html#apps">Applications</a><span>›</span>Sentikel</p>
   <span class="product-type">Android · Garanties</span>
+  <img src="img/sentikel-icone.png" alt="Icône de l'application Sentikel" width="88" height="88" style="display:block;width:88px;height:88px;border-radius:22px;margin-bottom:1.2rem;box-shadow:0 12px 32px rgba(0,0,0,0.4)">
   <h1>Senti<span>kel</span></h1>
   <p class="hero-desc">Sentikel scanne tes tickets de caisse et factures par IA pour en extraire automatiquement le produit, le commerçant, la date d'achat et le prix, puis suit la durée de garantie de chaque objet — pour ne plus jamais la laisser filer sans t'en rendre compte.</p>
   <div class="soon-badge">Disponible prochainement</div>
   <div class="cta-block">
-    <a href="mailto:rafteldeveloppement@proton.me?subject=Être informé du lancement de Sentikel" class="btn-primary">Être informé·e du lancement →</a>
+    <a href="mailto:contact@rafteldeveloppement.fr?subject=Être informé du lancement de Sentikel" class="btn-primary">Être informé·e du lancement →</a>
     <span class="price">Bientôt sur Google Play</span>
   </div>
 </div>
@@ -102,6 +132,28 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
     <div class="feature-card"><span class="feature-icon">⏳</span><p class="feature-title">Suivi automatique des garanties</p><p class="feature-desc">Chaque produit scanné est relié à sa durée de garantie, suivie automatiquement dans le temps — plus besoin de retrouver un papier ou une date dans un coin de mémoire.</p></div>
     <div class="feature-card"><span class="feature-icon">🔔</span><p class="feature-title">Alertes avant expiration</p><p class="feature-desc">Notification avant que la garantie d'un produit n'expire, pour avoir le temps d'agir — faire jouer un SAV ou un échange — avant qu'il ne soit trop tard.</p></div>
     <div class="feature-card"><span class="feature-icon">🗂️</span><p class="feature-title">Tous tes produits au même endroit</p><p class="feature-desc">Une bibliothèque claire de tous tes achats garantis, avec ticket et facture associés, consultable à tout moment en cas de besoin.</p></div>
+  </div>
+
+  <p class="section-label">Comment ça marche</p>
+  <h2>Trois gestes, et c'est réglé</h2>
+  <div class="steps3">
+    <div class="step"><div class="n">1</div><b>Photographiez le ticket</b><p>En sortant du magasin ou en rentrant à la maison, une photo du ticket ou de la facture suffit.</p></div>
+    <div class="step"><div class="n">2</div><b>Sentikel remplit la fiche</b><p>Produit, magasin, date d'achat et prix sont lus automatiquement. La durée de garantie est calculée.</p></div>
+    <div class="step"><div class="n">3</div><b>Vous êtes prévenu à temps</b><p>Avant la fin de la garantie, une notification vous le rappelle, avec le ticket prêt à présenter au SAV.</p></div>
+  </div>
+
+  <p class="section-label">Un exemple concret</p>
+  <div class="example">
+    <img src="img/sentikel-icone.png" alt="" width="72" height="72">
+    <div>
+      <span class="tag">Exemple</span>
+      <p><b>Votre lave-linge à 449 € tombe en panne 20 mois après l'achat.</b></p>
+      <ol>
+        <li>Les produits neufs bénéficient en France d'une <b>garantie légale de conformité de 2 ans</b> : une panne due à un défaut doit être prise en charge par le vendeur (réparation ou remplacement).</li>
+        <li>Encore faut-il retrouver le ticket… Avec Sentikel, il est déjà dans l'appli, lisible, avec la date d'achat.</li>
+        <li>Résultat : vous faites jouer la garantie au lieu de payer la réparation.</li>
+      </ol>
+    </div>
   </div>
 
   <p class="section-label">Offre</p>
@@ -154,7 +206,7 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
   <div class="cta-bottom">
     <h3>Sentikel</h3>
     <p>Application Android en développement — disponible prochainement. Laisse ton email pour être averti·e dès son ouverture.</p>
-    <a href="mailto:rafteldeveloppement@proton.me?subject=Être informé du lancement de Sentikel" class="btn-primary">Être informé·e du lancement →</a>
+    <a href="mailto:contact@rafteldeveloppement.fr?subject=Être informé du lancement de Sentikel" class="btn-primary">Être informé·e du lancement →</a>
   </div>
 </div>
 
@@ -162,10 +214,13 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
   <a href="index.html" class="footer-logo">RAFTEL DÉVELOPPEMENT</a>
   <ul class="footer-links">
     <li><a href="index.html">Accueil</a></li>
-    <li><a href="mentions-legales.html">Mentions légales</a></li>
-    <li><a href="cgv.html">CGV</a></li>
-    <li><a href="confidentialite.html">Confidentialité</a></li>
+    <li><a href="deuxsecondes.html">DeuxSecondes</a></li>
+    <li><a href="sentikel.html">Sentikel</a></li>
+    <li><a href="lunilo.html">Lunilo</a></li>
+    <li><a href="legal.html">Documents légaux</a></li>
+    <li><a href="mailto:contact@rafteldeveloppement.fr">Contact</a></li>
   </ul>
 </footer>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
