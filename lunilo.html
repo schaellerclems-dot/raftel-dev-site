@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2307080f'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='top' font-family='serif' fill='%23e8a020'>R</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='rbg' x1='0' y1='0' x2='200' y2='200' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2318130a'/%3E%3Cstop offset='1' stop-color='%23251b05'/%3E%3C/linearGradient%3E%3ClinearGradient id='rgold' x1='122' y1='120' x2='182' y2='180' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f0c040'/%3E%3Cstop offset='1' stop-color='%23b8902a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' rx='44' fill='url(%23rbg)'/%3E%3Cpath d='M52 62h60c18 0 34 13.5 34 30.5S130 123 112 123h-22' stroke='%23fff' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M90 123l30 45' stroke='%23fff' stroke-width='10' stroke-linecap='round'/%3E%3Ccircle cx='152' cy='150' r='30' fill='url(%23rgold)'/%3E%3Ccircle cx='152' cy='150' r='22' stroke='rgba(255,255,255,0.35)' stroke-width='2' fill='none'/%3E%3Cpolygon points='152,132 156,150 152,145 148,150' fill='%23fff'/%3E%3Cpolygon points='152,168 156,150 152,155 148,150' fill='rgba(255,255,255,0.35)'/%3E%3Ccircle cx='152' cy='150' r='5' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--gold:#e8a020;--gold-light:#f5c842;--gold-dim:#b87818;--dark:#07080f;--dark-2:#0e1020;--dark-3:#161828;--text:#e8e6df;--text-muted:#8a8880;--blue:#b478ff}
@@ -102,8 +102,16 @@ figure.shot figcaption b{color:var(--text);display:block}
 
 .footer-links{flex-wrap:wrap;justify-content:center}
 @media(max-width:600px){table{display:block;overflow-x:auto}.info-block,.container p,.container li{overflow-wrap:anywhere}}
+
+.nav-logo{display:inline-flex;align-items:center;gap:0.65rem}
+.nav-logo .logo-mark{width:30px;height:30px;flex-shrink:0}
+
+.play-btn{display:inline-flex;align-items:center;gap:0.5rem;background:#fff;color:#111;font-weight:800;font-size:0.85rem;padding:0.75rem 1.2rem;border-radius:8px;text-decoration:none}
+.play-btn[hidden]{display:none}
+.play-btn svg{width:18px;height:18px}
+.price-line{font-size:0.9rem;color:var(--text);margin:-0.6rem 0 1.4rem;font-weight:700}
 </style>
-<meta property="og:image" content="https://www.rafteldeveloppement.fr/og-image.png">
+<meta property="og:image" content="https://www.rafteldeveloppement.fr/og-lunilo.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_FR">
@@ -111,14 +119,14 @@ figure.shot figcaption b{color:var(--text);display:block}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Lunilo — Révisions du CP à la 6e en jouant">
 <meta name="twitter:description" content="Lunilo aide les enfants du CP à la 6e à réviser en jouant, quelques minutes par jour, sur tablette ou téléphone. App Android bientôt sur Google Play.">
-<meta name="twitter:image" content="https://www.rafteldeveloppement.fr/og-image.png">
-<script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Lunilo", "operatingSystem": "Android", "applicationCategory": "EducationalApplication", "description": "Application de révisions pour l'école primaire et la 6e, du CP à la 6e, sous forme de jeu, en sessions courtes.", "url": "https://www.rafteldeveloppement.fr/lunilo.html", "image": "https://www.rafteldeveloppement.fr/og-image.png", "inLanguage": "fr-FR", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "publisher": {"@type": "Organization", "name": "Raftel Développement", "url": "https://www.rafteldeveloppement.fr/"}, "author": {"@type": "Organization", "name": "Raftel Développement", "url": "https://www.rafteldeveloppement.fr/"}}</script>
+<meta name="twitter:image" content="https://www.rafteldeveloppement.fr/og-lunilo.png">
+<script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@type": "MobileApplication", "name": "Lunilo", "operatingSystem": "Android", "applicationCategory": "EducationalApplication", "description": "Application de révisions pour l'école primaire et la 6e, du CP à la 6e, sous forme de jeu, en sessions courtes.", "url": "https://www.rafteldeveloppement.fr/lunilo.html", "image": "https://www.rafteldeveloppement.fr/og-lunilo.png", "inLanguage": "fr-FR", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "publisher": {"@type": "Organization", "name": "Raftel Développement", "url": "https://www.rafteldeveloppement.fr/"}, "author": {"@type": "Organization", "name": "Raftel Développement", "url": "https://www.rafteldeveloppement.fr/"}}</script>
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.rafteldeveloppement.fr/"}, {"@type": "ListItem", "position": 2, "name": "Lunilo", "item": "https://www.rafteldeveloppement.fr/lunilo.html"}]}</script>
-<script type="application/ld+json" id="faq-schema">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quand Lunilo sera-t-elle disponible ?", "acceptedAnswer": {"@type": "Answer", "text": "L'application est en développement, sa sortie est prévue prochainement sur Google Play. Laisse ton email pour être prévenu·e dès l'ouverture."}}, {"@type": "Question", "name": "Pour quel âge est faite Lunilo ?", "acceptedAnswer": {"@type": "Answer", "text": "Lunilo s'adresse aux enfants du CP à la 6e. Les révisions sont adaptées au niveau de chaque enfant."}}, {"@type": "Question", "name": "Combien de temps faut-il y passer ?", "acceptedAnswer": {"@type": "Answer", "text": "Quelques minutes par jour suffisent. Lunilo est pensée pour des sessions courtes, faciles à caser après l'école, en voiture ou pendant les vacances."}}, {"@type": "Question", "name": "Mon enfant peut-il l'utiliser seul ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, Lunilo est conçue pour que l'enfant révise en autonomie, sans qu'un adulte ait besoin d'être à côté."}}, {"@type": "Question", "name": "Sur quels appareils fonctionne Lunilo ?", "acceptedAnswer": {"@type": "Answer", "text": "Lunilo est une application Android, utilisable sur tablette comme sur téléphone."}}, {"@type": "Question", "name": "Faut-il une connexion internet ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Tous les exercices sont intégrés à l'application et fonctionnent hors connexion."}}, {"@type": "Question", "name": "Y a-t-il de la publicité ou des achats cachés ?", "acceptedAnswer": {"@type": "Answer", "text": "Il n'y a aucune publicité. L'abonnement Premium est géré par Google Play et n'est accessible que depuis l'espace parent, protégé par un code."}}]}</script>
+<script type="application/ld+json" id="faq-schema">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quand Lunilo sera-t-elle disponible ?", "acceptedAnswer": {"@type": "Answer", "text": "Lunilo est en cours de validation par Google : la sortie sur Google Play est imminente. Écrivez-nous pour être prévenu le jour J."}}, {"@type": "Question", "name": "Pour quel âge est faite Lunilo ?", "acceptedAnswer": {"@type": "Answer", "text": "Lunilo s'adresse aux enfants du CP à la 6e. Les révisions sont adaptées au niveau de chaque enfant."}}, {"@type": "Question", "name": "Combien de temps faut-il y passer ?", "acceptedAnswer": {"@type": "Answer", "text": "Quelques minutes par jour suffisent. Lunilo est pensée pour des sessions courtes, faciles à caser après l'école, en voiture ou pendant les vacances."}}, {"@type": "Question", "name": "Mon enfant peut-il l'utiliser seul ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, Lunilo est conçue pour que l'enfant révise en autonomie, sans qu'un adulte ait besoin d'être à côté."}}, {"@type": "Question", "name": "Sur quels appareils fonctionne Lunilo ?", "acceptedAnswer": {"@type": "Answer", "text": "Lunilo est une application Android, utilisable sur tablette comme sur téléphone."}}, {"@type": "Question", "name": "Faut-il une connexion internet ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Tous les exercices sont intégrés à l'application et fonctionnent hors connexion."}}, {"@type": "Question", "name": "Y a-t-il de la publicité ou des achats cachés ?", "acceptedAnswer": {"@type": "Answer", "text": "Il n'y a aucune publicité. L'abonnement Premium est géré par Google Play et n'est accessible que depuis l'espace parent, protégé par un code."}}, {"@type": "Question", "name": "Combien coûte Lunilo ?", "acceptedAnswer": {"@type": "Answer", "text": "Une version gratuite permet de commencer. Lunilo Premium coûte 3,99 € par mois, avec 14 jours d'essai gratuit, pour jusqu'à 4 enfants. L'abonnement se gère et se résilie depuis Google Play."}}]}</script>
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-logo">RAFTEL DEV</a>
+  <a href="index.html" class="nav-logo"><svg class="logo-mark" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="rbg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18130a"/><stop offset="1" stop-color="#251b05"/></linearGradient><linearGradient id="rgold" x1="122" y1="120" x2="182" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f0c040"/><stop offset="1" stop-color="#b8902a"/></linearGradient></defs><rect width="200" height="200" rx="44" fill="url(#rbg)"/><path d="M52 62h60c18 0 34 13.5 34 30.5S130 123 112 123h-22" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M90 123l30 45" stroke="#fff" stroke-width="10" stroke-linecap="round"/><circle cx="152" cy="150" r="30" fill="url(#rgold)"/><circle cx="152" cy="150" r="22" stroke="rgba(255,255,255,0.35)" stroke-width="2" fill="none"/><polygon points="152,132 156,150 152,145 148,150" fill="#fff"/><polygon points="152,168 156,150 152,155 148,150" fill="rgba(255,255,255,0.35)"/><circle cx="152" cy="150" r="5" fill="#fff"/></svg>RAFTEL DEV</a>
   <a href="index.html" class="nav-back">← Retour à l'accueil</a>
 </nav>
 
@@ -127,10 +135,11 @@ figure.shot figcaption b{color:var(--text);display:block}
   <span class="product-type">Android · Éducation</span>
   <h1>Luni<span>lo</span></h1>
   <p class="hero-desc">Lunilo aide les enfants du CP à la 6e à réviser en jouant. Quelques minutes par jour, à son niveau, sur la tablette ou le téléphone : les révisions deviennent un moment qu'il fait seul, et plus une bataille du soir.</p>
-  <div class="soon-badge">Disponible prochainement</div>
+  <div class="soon-badge" data-soon="lunilo">Bientôt sur Google Play</div>
+  <p class="price-line">Gratuit pour commencer · Premium 3,99 €/mois, jusqu'à 4 enfants</p>
   <div class="cta-block">
-    <a href="mailto:contact@rafteldeveloppement.fr?subject=Être informé du lancement de Lunilo" class="btn-primary">Être informé·e du lancement →</a>
-    <span class="price">Bientôt sur Google Play</span>
+    <a class="play-btn" data-play="lunilo" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="M17.2 8.6 13.8 12l3.4 3.4 3.9-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 1.8c.3-.2.8-.2 1.3.1l12.3 6.7-3.4 3.4z"/><path fill="#EA4335" d="M13.8 12l3.4 3.4-12.3 6.7c-.5.3-1 .3-1.3.1z"/></svg>Google Play</a>
+    <a href="mailto:contact@rafteldeveloppement.fr?subject=Pr%C3%A9venez-moi%20de%20la%20sortie%20de%20Lunilo" class="btn-primary">Être prévenu de la sortie →</a>
   </div>
 </div>
 
@@ -161,6 +170,28 @@ figure.shot figcaption b{color:var(--text);display:block}
     <p><a href="lunilo-confidentialite.html">Lire la politique de confidentialité de Lunilo →</a></p>
   </div>
 
+  <p class="section-label">Offre</p>
+  <h2>Gratuit pour commencer</h2>
+  <div class="apps-row">
+    <div class="app-card">
+      <p class="app-label">Gratuit</p>
+      <h3>Pour découvrir</h3>
+      <ul>
+        <li>Une version gratuite pour essayer Lunilo avec votre enfant</li>
+        <li>Sans publicité et sans collecte de données</li>
+      </ul>
+    </div>
+    <div class="app-card">
+      <p class="app-label">Premium — 3,99 €/mois</p>
+      <h3>Toute la famille</h3>
+      <ul>
+        <li>14 jours d'essai gratuit</li>
+        <li>Jusqu'à 4 enfants, chacun avec son profil</li>
+        <li>Abonnement géré et résiliable depuis Google Play</li>
+      </ul>
+    </div>
+  </div>
+
   <p class="section-label">Pour qui ?</p>
   <h2>Lunilo est faite pour vous si...</h2>
   <div class="for-who">
@@ -175,19 +206,20 @@ figure.shot figcaption b{color:var(--text);display:block}
   <p class="section-label">Questions fréquentes</p>
   <h2>FAQ</h2>
   <div class="faq">
-    <div class="faq-item"><p class="faq-q">Quand Lunilo sera-t-elle disponible ?</p><p class="faq-a">L'application est en développement, sa sortie est prévue prochainement sur Google Play. Laisse ton email pour être prévenu·e dès l'ouverture.</p></div>
+    <div class="faq-item"><p class="faq-q">Quand Lunilo sera-t-elle disponible ?</p><p class="faq-a">Lunilo est en cours de validation par Google : la sortie sur Google Play est imminente. Écrivez-nous pour être prévenu le jour J.</p></div>
     <div class="faq-item"><p class="faq-q">Pour quel âge est faite Lunilo ?</p><p class="faq-a">Lunilo s'adresse aux enfants du CP à la 6e. Les révisions sont adaptées au niveau de chaque enfant.</p></div>
     <div class="faq-item"><p class="faq-q">Combien de temps faut-il y passer ?</p><p class="faq-a">Quelques minutes par jour suffisent. Lunilo est pensée pour des sessions courtes, faciles à caser après l'école, en voiture ou pendant les vacances.</p></div>
     <div class="faq-item"><p class="faq-q">Mon enfant peut-il l'utiliser seul ?</p><p class="faq-a">Oui, Lunilo est conçue pour que l'enfant révise en autonomie, sans qu'un adulte ait besoin d'être à côté.</p></div>
     <div class="faq-item"><p class="faq-q">Sur quels appareils fonctionne Lunilo ?</p><p class="faq-a">Lunilo est une application Android, utilisable sur tablette comme sur téléphone.</p></div>
     <div class="faq-item"><p class="faq-q">Faut-il une connexion internet ?</p><p class="faq-a">Non. Tous les exercices sont intégrés à l'application et fonctionnent hors connexion.</p></div>
     <div class="faq-item"><p class="faq-q">Y a-t-il de la publicité ou des achats cachés ?</p><p class="faq-a">Il n'y a aucune publicité. L'abonnement Premium est géré par Google Play et n'est accessible que depuis l'espace parent, protégé par un code.</p></div>
+    <div class="faq-item"><p class="faq-q">Combien coûte Lunilo ?</p><p class="faq-a">Une version gratuite permet de commencer. Lunilo Premium coûte 3,99 € par mois, avec 14 jours d'essai gratuit, pour jusqu'à 4 enfants. L'abonnement se gère et se résilie depuis Google Play.</p></div>
   </div>
 
   <div class="cta-bottom">
     <h3>Lunilo</h3>
     <p>Application Android en développement — disponible prochainement. Laisse ton email pour être averti·e dès son ouverture.</p>
-    <a href="mailto:contact@rafteldeveloppement.fr?subject=Être informé du lancement de Lunilo" class="btn-primary">Être informé·e du lancement →</a>
+    <a href="mailto:contact@rafteldeveloppement.fr?subject=Pr%C3%A9venez-moi%20de%20la%20sortie%20de%20Lunilo" class="btn-primary">Être prévenu de la sortie →</a>
   </div>
 </div>
 
@@ -203,5 +235,6 @@ figure.shot figcaption b{color:var(--text);display:block}
   </ul>
 </footer>
 <script defer src="/_vercel/insights/script.js"></script>
+<script src="play-links.js"></script>
 </body>
 </html>
