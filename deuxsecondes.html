@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2307080f'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='top' font-family='serif' fill='%23e8a020'>R</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='rbg' x1='0' y1='0' x2='200' y2='200' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2318130a'/%3E%3Cstop offset='1' stop-color='%23251b05'/%3E%3C/linearGradient%3E%3ClinearGradient id='rgold' x1='122' y1='120' x2='182' y2='180' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f0c040'/%3E%3Cstop offset='1' stop-color='%23b8902a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' rx='44' fill='url(%23rbg)'/%3E%3Cpath d='M52 62h60c18 0 34 13.5 34 30.5S130 123 112 123h-22' stroke='%23fff' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M90 123l30 45' stroke='%23fff' stroke-width='10' stroke-linecap='round'/%3E%3Ccircle cx='152' cy='150' r='30' fill='url(%23rgold)'/%3E%3Ccircle cx='152' cy='150' r='22' stroke='rgba(255,255,255,0.35)' stroke-width='2' fill='none'/%3E%3Cpolygon points='152,132 156,150 152,145 148,150' fill='%23fff'/%3E%3Cpolygon points='152,168 156,150 152,155 148,150' fill='rgba(255,255,255,0.35)'/%3E%3Ccircle cx='152' cy='150' r='5' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--gold:#e8a020;--gold-light:#f5c842;--gold-dim:#b87818;--dark:#07080f;--dark-2:#0e1020;--dark-3:#161828;--text:#e8e6df;--text-muted:#8a8880;--blue:#4fc3f7}
@@ -102,6 +102,14 @@ figure.shot figcaption b{color:var(--text);display:block}
 
 .footer-links{flex-wrap:wrap;justify-content:center}
 @media(max-width:600px){table{display:block;overflow-x:auto}.info-block,.container p,.container li{overflow-wrap:anywhere}}
+
+.nav-logo{display:inline-flex;align-items:center;gap:0.65rem}
+.nav-logo .logo-mark{width:30px;height:30px;flex-shrink:0}
+
+.play-btn{display:inline-flex;align-items:center;gap:0.5rem;background:#fff;color:#111;font-weight:800;font-size:0.85rem;padding:0.75rem 1.2rem;border-radius:8px;text-decoration:none}
+.play-btn[hidden]{display:none}
+.play-btn svg{width:18px;height:18px}
+.price-line{font-size:0.9rem;color:var(--text);margin:-0.6rem 0 1.4rem;font-weight:700}
 </style>
 <meta property="og:image" content="https://www.rafteldeveloppement.fr/og-deuxsecondes.png">
 <meta property="og:image:width" content="1200">
@@ -114,11 +122,11 @@ figure.shot figcaption b{color:var(--text);display:block}
 <meta name="twitter:image" content="https://www.rafteldeveloppement.fr/og-deuxsecondes.png">
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@type": "MobileApplication", "name": "DeuxSecondes", "operatingSystem": "Android", "applicationCategory": "SecurityApplication", "description": "Application de contrôle parental avec détection du cyberharcèlement par IA, gestion du temps d'écran, couvre-feu et alertes en temps réel.", "url": "https://www.rafteldeveloppement.fr/deuxsecondes.html", "image": "https://www.rafteldeveloppement.fr/og-deuxsecondes.png", "inLanguage": "fr-FR", "publisher": {"@type": "Organization", "name": "Raftel Développement", "url": "https://www.rafteldeveloppement.fr/"}, "author": {"@type": "Organization", "name": "Raftel Développement", "url": "https://www.rafteldeveloppement.fr/"}}</script>
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.rafteldeveloppement.fr/"}, {"@type": "ListItem", "position": 2, "name": "DeuxSecondes", "item": "https://www.rafteldeveloppement.fr/deuxsecondes.html"}]}</script>
-<script type="application/ld+json" id="faq-schema">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quand DeuxSecondes sera-t-elle disponible ?", "acceptedAnswer": {"@type": "Answer", "text": "Sortie prévue fin 2026 ou début 2027 sur Google Play. L'application est en développement actif — laisse ton email pour être prévenu·e dès l'ouverture."}}, {"@type": "Question", "name": "Comment fonctionne la détection de cyberharcèlement ?", "acceptedAnswer": {"@type": "Answer", "text": "Elle combine une liste de mots-clés définie par le parent, un dictionnaire enrichi (insultes, exclusion, menaces, propos à caractère sexuel, argot ado), et une analyse par IA pour les cas plus subtils (ton agressif, manipulation). Trois alertes ou plus sur une même application déclenchent automatiquement une alerte de gravité élevée."}}, {"@type": "Question", "name": "Faut-il deux téléphones, un pour l'enfant et un pour le parent ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, DeuxSecondes s'installe sur le téléphone de l'enfant et DeuxSecondes Parent sur celui du parent. Les deux se connectent via un code à 6 chiffres."}}, {"@type": "Question", "name": "Quel sera le modèle économique ?", "acceptedAnswer": {"@type": "Answer", "text": "Un essai gratuit de 14 jours, puis un abonnement mensuel ou annuel via Google Play."}}, {"@type": "Question", "name": "L'enfant sait-il que son téléphone est protégé ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Une notification permanente indique sur son téléphone que l'appareil est protégé : DeuxSecondes ne surveille jamais en cachette."}}, {"@type": "Question", "name": "Y a-t-il de la publicité ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. DeuxSecondes ne contient aucune publicité et les données ne sont jamais vendues."}}]}</script>
+<script type="application/ld+json" id="faq-schema">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quand DeuxSecondes sera-t-elle disponible ?", "acceptedAnswer": {"@type": "Answer", "text": "DeuxSecondes est en cours de validation par Google : la sortie sur Google Play est imminente. Écrivez-nous pour être prévenu le jour J."}}, {"@type": "Question", "name": "Comment fonctionne la détection de cyberharcèlement ?", "acceptedAnswer": {"@type": "Answer", "text": "Elle combine une liste de mots-clés définie par le parent, un dictionnaire enrichi (insultes, exclusion, menaces, propos à caractère sexuel, argot ado), et une analyse par IA pour les cas plus subtils (ton agressif, manipulation). Trois alertes ou plus sur une même application déclenchent automatiquement une alerte de gravité élevée."}}, {"@type": "Question", "name": "Faut-il deux téléphones, un pour l'enfant et un pour le parent ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, DeuxSecondes s'installe sur le téléphone de l'enfant et DeuxSecondes Parent sur celui du parent. Les deux se connectent via un code à 6 chiffres."}}, {"@type": "Question", "name": "Combien coûte DeuxSecondes ?", "acceptedAnswer": {"@type": "Answer", "text": "Un essai gratuit de 14 jours, puis 3,99 € par mois ou 34,99 € par an, payés via Google Play. Vous pouvez résilier à tout moment depuis Google Play."}}, {"@type": "Question", "name": "L'enfant sait-il que son téléphone est protégé ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Une notification permanente indique sur son téléphone que l'appareil est protégé : DeuxSecondes ne surveille jamais en cachette."}}, {"@type": "Question", "name": "Y a-t-il de la publicité ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. DeuxSecondes ne contient aucune publicité et les données ne sont jamais vendues."}}]}</script>
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-logo">RAFTEL DEV</a>
+  <a href="index.html" class="nav-logo"><svg class="logo-mark" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="rbg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18130a"/><stop offset="1" stop-color="#251b05"/></linearGradient><linearGradient id="rgold" x1="122" y1="120" x2="182" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f0c040"/><stop offset="1" stop-color="#b8902a"/></linearGradient></defs><rect width="200" height="200" rx="44" fill="url(#rbg)"/><path d="M52 62h60c18 0 34 13.5 34 30.5S130 123 112 123h-22" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M90 123l30 45" stroke="#fff" stroke-width="10" stroke-linecap="round"/><circle cx="152" cy="150" r="30" fill="url(#rgold)"/><circle cx="152" cy="150" r="22" stroke="rgba(255,255,255,0.35)" stroke-width="2" fill="none"/><polygon points="152,132 156,150 152,145 148,150" fill="#fff"/><polygon points="152,168 156,150 152,155 148,150" fill="rgba(255,255,255,0.35)"/><circle cx="152" cy="150" r="5" fill="#fff"/></svg>RAFTEL DEV</a>
   <a href="index.html" class="nav-back">← Retour à l'accueil</a>
 </nav>
 
@@ -127,9 +135,12 @@ figure.shot figcaption b{color:var(--text);display:block}
   <span class="product-type">Android · Contrôle parental</span>
   <h1>Deux<span>Secondes</span></h1>
   <p class="hero-desc">Une suite parent + enfant pour protéger sans fliquer. DeuxSecondes détecte les signes de cyberharcèlement grâce à l'IA, gère le temps d'écran et le couvre-feu, et alerte le parent en temps réel dès qu'un problème est détecté — pas après coup.</p>
-  <div class="soon-badge">Sortie prévue fin 2026 / début 2027</div>
+  <div class="soon-badge" data-soon="deuxsecondes">Bientôt sur Google Play</div>
+  <p class="price-line">3,99 €/mois ou 34,99 €/an · 14 jours d'essai gratuit</p>
   <div class="cta-block">
-    <a href="index.html#testeurs" class="btn-primary">Devenir testeur →</a>
+    <a class="play-btn" data-play="deuxsecondes-parent" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="M17.2 8.6 13.8 12l3.4 3.4 3.9-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 1.8c.3-.2.8-.2 1.3.1l12.3 6.7-3.4 3.4z"/><path fill="#EA4335" d="M13.8 12l3.4 3.4-12.3 6.7c-.5.3-1 .3-1.3.1z"/></svg>Appli parent</a>
+    <a class="play-btn" data-play="deuxsecondes-enfant" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="M17.2 8.6 13.8 12l3.4 3.4 3.9-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 1.8c.3-.2.8-.2 1.3.1l12.3 6.7-3.4 3.4z"/><path fill="#EA4335" d="M13.8 12l3.4 3.4-12.3 6.7c-.5.3-1 .3-1.3.1z"/></svg>Appli enfant</a>
+    <a href="mailto:contact@rafteldeveloppement.fr?subject=Pr%C3%A9venez-moi%20de%20la%20sortie%20de%20DeuxSecondes" class="btn-primary">Être prévenu de la sortie →</a>
     <a href="#en-images" class="btn-ghost2">Voir l'appli en images</a>
   </div>
 </div>
@@ -201,18 +212,18 @@ figure.shot figcaption b{color:var(--text);display:block}
   <p class="section-label">Questions fréquentes</p>
   <h2>FAQ</h2>
   <div class="faq">
-    <div class="faq-item"><p class="faq-q">Quand DeuxSecondes sera-t-elle disponible ?</p><p class="faq-a">Sortie prévue fin 2026 ou début 2027 sur Google Play. L'application est en développement actif — laisse ton email pour être prévenu·e dès l'ouverture.</p></div>
+    <div class="faq-item"><p class="faq-q">Quand DeuxSecondes sera-t-elle disponible ?</p><p class="faq-a">DeuxSecondes est en cours de validation par Google : la sortie sur Google Play est imminente. Écrivez-nous pour être prévenu le jour J.</p></div>
     <div class="faq-item"><p class="faq-q">Comment fonctionne la détection de cyberharcèlement ?</p><p class="faq-a">Elle combine une liste de mots-clés définie par le parent, un dictionnaire enrichi (insultes, exclusion, menaces, propos à caractère sexuel, argot ado), et une analyse par IA pour les cas plus subtils (ton agressif, manipulation). Trois alertes ou plus sur une même application déclenchent automatiquement une alerte de gravité élevée.</p></div>
     <div class="faq-item"><p class="faq-q">Faut-il deux téléphones, un pour l'enfant et un pour le parent ?</p><p class="faq-a">Oui, DeuxSecondes s'installe sur le téléphone de l'enfant et DeuxSecondes Parent sur celui du parent. Les deux se connectent via un code à 6 chiffres.</p></div>
-    <div class="faq-item"><p class="faq-q">Quel sera le modèle économique ?</p><p class="faq-a">Un essai gratuit de 14 jours, puis un abonnement mensuel ou annuel via Google Play.</p></div>
+    <div class="faq-item"><p class="faq-q">Combien coûte DeuxSecondes ?</p><p class="faq-a">Un essai gratuit de 14 jours, puis 3,99 € par mois ou 34,99 € par an, payés via Google Play. Vous pouvez résilier à tout moment depuis Google Play.</p></div>
     <div class="faq-item"><p class="faq-q">L'enfant sait-il que son téléphone est protégé ?</p><p class="faq-a">Oui. Une notification permanente indique sur son téléphone que l'appareil est protégé : DeuxSecondes ne surveille jamais en cachette.</p></div>
     <div class="faq-item"><p class="faq-q">Y a-t-il de la publicité ?</p><p class="faq-a">Non. DeuxSecondes ne contient aucune publicité et les données ne sont jamais vendues.</p></div>
   </div>
 
   <div class="cta-bottom">
     <h3>DeuxSecondes</h3>
-    <p>Sortie prévue fin 2026 / début 2027. Envie de l'essayer avant tout le monde ? Rejoignez le test fermé sur Google Play.</p>
-    <a href="mailto:contact@rafteldeveloppement.fr?subject=Je%20veux%20tester%20DeuxSecondes&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20tester%20DeuxSecondes.%0AMon%20adresse%20Gmail%20(compte%20Google%20Play)%20%3A%20%0A" class="btn-primary">Je veux tester DeuxSecondes →</a>
+    <p>DeuxSecondes est en cours de validation par Google. Laissez-nous votre adresse : on vous prévient le jour de la sortie.</p>
+    <a href="mailto:contact@rafteldeveloppement.fr?subject=Pr%C3%A9venez-moi%20de%20la%20sortie%20de%20DeuxSecondes" class="btn-primary">Être prévenu de la sortie →</a>
   </div>
 </div>
 
@@ -228,5 +239,6 @@ figure.shot figcaption b{color:var(--text);display:block}
   </ul>
 </footer>
 <script defer src="/_vercel/insights/script.js"></script>
+<script src="play-links.js"></script>
 </body>
 </html>
