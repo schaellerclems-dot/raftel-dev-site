@@ -21,7 +21,7 @@
 <meta name="twitter:description" content="Protéger les enfants en ligne, garder ses garanties sous contrôle, réviser en jouant : trois applications Android conçues en Normandie.">
 <meta name="twitter:image" content="https://www.rafteldeveloppement.fr/og-image.png">
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2307080f'/><text y='.9em' font-size='72' x='50%25' text-anchor='middle' dominant-baseline='top' font-family='serif' fill='%23e8a020'>R</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='rbg' x1='0' y1='0' x2='200' y2='200' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2318130a'/%3E%3Cstop offset='1' stop-color='%23251b05'/%3E%3C/linearGradient%3E%3ClinearGradient id='rgold' x1='122' y1='120' x2='182' y2='180' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f0c040'/%3E%3Cstop offset='1' stop-color='%23b8902a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' rx='44' fill='url(%23rbg)'/%3E%3Cpath d='M52 62h60c18 0 34 13.5 34 30.5S130 123 112 123h-22' stroke='%23fff' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M90 123l30 45' stroke='%23fff' stroke-width='10' stroke-linecap='round'/%3E%3Ccircle cx='152' cy='150' r='30' fill='url(%23rgold)'/%3E%3Ccircle cx='152' cy='150' r='22' stroke='rgba(255,255,255,0.35)' stroke-width='2' fill='none'/%3E%3Cpolygon points='152,132 156,150 152,145 148,150' fill='%23fff'/%3E%3Cpolygon points='152,168 156,150 152,155 148,150' fill='rgba(255,255,255,0.35)'/%3E%3Ccircle cx='152' cy='150' r='5' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -182,18 +182,26 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
   footer{padding:2rem 1.2rem;flex-direction:column;text-align:center}
   .footer-links{justify-content:center}
 }
+
+.nav-logo{display:inline-flex;align-items:center;gap:0.65rem}
+.nav-logo .logo-mark{width:30px;height:30px;flex-shrink:0}
+
+.play-btn{display:inline-flex;align-items:center;gap:0.5rem;background:#fff;color:#111;font-weight:800;font-size:0.85rem;padding:0.75rem 1.2rem;border-radius:8px;text-decoration:none}
+.play-btn[hidden]{display:none}
+.play-btn svg{width:18px;height:18px}
+.price-line{font-size:0.9rem;color:var(--text);margin:-0.6rem 0 1.4rem;font-weight:700}
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="#" class="nav-logo">RAFTEL DEV</a>
+  <a href="#" class="nav-logo"><svg class="logo-mark" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="rbg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18130a"/><stop offset="1" stop-color="#251b05"/></linearGradient><linearGradient id="rgold" x1="122" y1="120" x2="182" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f0c040"/><stop offset="1" stop-color="#b8902a"/></linearGradient></defs><rect width="200" height="200" rx="44" fill="url(#rbg)"/><path d="M52 62h60c18 0 34 13.5 34 30.5S130 123 112 123h-22" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M90 123l30 45" stroke="#fff" stroke-width="10" stroke-linecap="round"/><circle cx="152" cy="150" r="30" fill="url(#rgold)"/><circle cx="152" cy="150" r="22" stroke="rgba(255,255,255,0.35)" stroke-width="2" fill="none"/><polygon points="152,132 156,150 152,145 148,150" fill="#fff"/><polygon points="152,168 156,150 152,155 148,150" fill="rgba(255,255,255,0.35)"/><circle cx="152" cy="150" r="5" fill="#fff"/></svg>RAFTEL DEV</a>
   <ul class="nav-links">
     <li><a href="#deuxsecondes">DeuxSecondes</a></li>
     <li><a href="#sentikel">Sentikel</a></li>
     <li><a href="#lunilo">Lunilo</a></li>
     <li><a href="#jeux">Jeux</a></li>
-    <li><a href="#testeurs">Devenir testeur</a></li>
+    <li><a href="#sortie">Être prévenu</a></li>
     <li><a href="#apropos">À propos</a></li>
   </ul>
   <a href="mailto:contact@rafteldeveloppement.fr" class="nav-cta">Nous écrire</a>
@@ -206,7 +214,7 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
     <p class="lead">Protéger ses enfants en ligne, ne plus perdre une garantie, faire réviser sans bataille : trois applications simples, pensées pour le quotidien des parents.</p>
     <div class="hero-actions">
       <a href="#apps" class="btn btn-gold">Découvrir les applis</a>
-      <a href="#testeurs" class="btn btn-ghost">Devenir testeur</a>
+      <a href="#sortie" class="btn btn-ghost">Être prévenu de la sortie</a>
     </div>
     <div class="app-chips">
       <a class="chip" href="#deuxsecondes"><span class="dot" style="background:rgba(79,195,247,0.18)">🛡️</span>DeuxSecondes</a>
@@ -237,8 +245,11 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
           <li>Localisation de l'appareil et verrouillage à distance en un geste</li>
           <li>L'enfant est informé : une notification indique en permanence que l'appareil est protégé</li>
         </ul>
-        <div class="status">Sortie prévue fin 2026 / début 2027</div>
+        <div class="status" data-soon="deuxsecondes">Bientôt sur Google Play</div>
+        <p class="price-line">3,99 €/mois ou 34,99 €/an · 14 jours d'essai gratuit</p>
         <div class="app-actions">
+          <a class="play-btn" data-play="deuxsecondes-parent" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="M17.2 8.6 13.8 12l3.4 3.4 3.9-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 1.8c.3-.2.8-.2 1.3.1l12.3 6.7-3.4 3.4z"/><path fill="#EA4335" d="M13.8 12l3.4 3.4-12.3 6.7c-.5.3-1 .3-1.3.1z"/></svg>Appli parent</a>
+          <a class="play-btn" data-play="deuxsecondes-enfant" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="M17.2 8.6 13.8 12l3.4 3.4 3.9-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 1.8c.3-.2.8-.2 1.3.1l12.3 6.7-3.4 3.4z"/><path fill="#EA4335" d="M13.8 12l3.4 3.4-12.3 6.7c-.5.3-1 .3-1.3.1z"/></svg>Appli enfant</a>
           <a href="deuxsecondes.html" class="btn btn-ghost" style="border-color:rgba(79,195,247,0.5);color:var(--blue)">Voir l'application en images</a>
         </div>
       </div>
@@ -262,8 +273,10 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
           <li>Tous vos achats et justificatifs au même endroit, prêts pour l'assurance</li>
           <li>Gratuit jusqu'à 5 produits ; Premium pour l'illimité et le suivi des contrats</li>
         </ul>
-        <div class="status">Disponible prochainement</div>
+        <div class="status" data-soon="sentikel">Disponible prochainement</div>
+        <p class="price-line">Gratuit jusqu'à 5 produits · Premium 2,99 €/mois ou 19,99 €/an</p>
         <div class="app-actions">
+          <a class="play-btn" data-play="sentikel" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="M17.2 8.6 13.8 12l3.4 3.4 3.9-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 1.8c.3-.2.8-.2 1.3.1l12.3 6.7-3.4 3.4z"/><path fill="#EA4335" d="M13.8 12l3.4 3.4-12.3 6.7c-.5.3-1 .3-1.3.1z"/></svg>Google Play</a>
           <a href="sentikel.html" class="btn btn-ghost" style="border-color:rgba(62,201,138,0.5);color:var(--green)">Comment ça marche</a>
         </div>
       </div>
@@ -293,8 +306,10 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
           <li>Espace parent protégé par un code, avec bilan chaque dimanche</li>
           <li>Aucune publicité, aucune donnée collectée, fonctionne même hors connexion</li>
         </ul>
-        <div class="status">Disponible prochainement</div>
+        <div class="status" data-soon="lunilo">Bientôt sur Google Play</div>
+        <p class="price-line">Gratuit pour commencer · Premium 3,99 €/mois, jusqu'à 4 enfants</p>
         <div class="app-actions">
+          <a class="play-btn" data-play="lunilo" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="M17.2 8.6 13.8 12l3.4 3.4 3.9-2.2c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 1.8c.3-.2.8-.2 1.3.1l12.3 6.7-3.4 3.4z"/><path fill="#EA4335" d="M13.8 12l3.4 3.4-12.3 6.7c-.5.3-1 .3-1.3.1z"/></svg>Google Play</a>
           <a href="lunilo.html" class="btn btn-ghost" style="border-color:rgba(180,120,255,0.5);color:var(--purple)">Découvrir Lunilo</a>
         </div>
       </div>
@@ -406,22 +421,24 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
   </div>
 </section>
 
-<section id="testeurs">
+<section id="sortie">
   <div class="wrap">
     <div class="testers">
       <div>
-        <p class="section-label">Avant tout le monde</p>
-        <h2 class="section-title">Devenez testeur de DeuxSecondes</h2>
-        <p class="section-desc" style="margin-bottom:1.5rem">Avant sa sortie publique, DeuxSecondes passe par une phase de test fermé sur Google Play avec de vrais parents. Vous pouvez en faire partie et nous aider à la peaufiner.</p>
+        <p class="section-label">Sorties imminentes</p>
+        <h2 class="section-title">Soyez prévenu le jour de la sortie</h2>
+        <p class="section-desc" style="margin-bottom:1.5rem">DeuxSecondes et Lunilo sont en cours de validation par Google, Sentikel arrive ensuite. Laissez-nous votre adresse : un seul e-mail le jour où l'appli qui vous intéresse est disponible, rien d'autre.</p>
         <ol class="steps">
-          <li>Envoyez-nous l'adresse Gmail associée à votre téléphone Android.</li>
-          <li>Vous recevez un lien Google Play pour installer l'application en avant-première.</li>
-          <li>Vous l'utilisez au quotidien et nous dites ce qui peut être amélioré.</li>
+          <li>Choisissez l'appli qui vous intéresse.</li>
+          <li>Envoyez-nous un petit message (il est déjà prêt).</li>
+          <li>Vous recevez le lien Google Play dès la sortie.</li>
         </ol>
       </div>
-      <div style="text-align:center">
-        <a href="mailto:contact@rafteldeveloppement.fr?subject=Je%20veux%20tester%20DeuxSecondes&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20tester%20DeuxSecondes.%0AMon%20adresse%20Gmail%20(compte%20Google%20Play)%20%3A%20%0A" class="btn btn-gold">Je veux tester</a>
-        <p class="note">Il faut un téléphone Android et un compte Google.<br>Sentikel et Lunilo suivront.</p>
+      <div style="display:flex;flex-direction:column;gap:0.8rem;align-items:stretch;text-align:center">
+        <a href="mailto:contact@rafteldeveloppement.fr?subject=Pr%C3%A9venez-moi%20de%20la%20sortie%20de%20DeuxSecondes" class="btn btn-gold">DeuxSecondes</a>
+        <a href="mailto:contact@rafteldeveloppement.fr?subject=Pr%C3%A9venez-moi%20de%20la%20sortie%20de%20Lunilo" class="btn btn-gold">Lunilo</a>
+        <a href="mailto:contact@rafteldeveloppement.fr?subject=Pr%C3%A9venez-moi%20de%20la%20sortie%20de%20Sentikel" class="btn btn-gold">Sentikel</a>
+        <p class="note">Votre adresse ne sert qu'à vous prévenir de la sortie.</p>
       </div>
     </div>
   </div>
@@ -429,7 +446,7 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
 
 <section id="apropos">
   <div class="about">
-    <div class="mark">R</div>
+    <div class="mark" style="padding:14px"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="rbg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18130a"/><stop offset="1" stop-color="#251b05"/></linearGradient><linearGradient id="rgold" x1="122" y1="120" x2="182" y2="180" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f0c040"/><stop offset="1" stop-color="#b8902a"/></linearGradient></defs><rect width="200" height="200" rx="44" fill="url(#rbg)"/><path d="M52 62h60c18 0 34 13.5 34 30.5S130 123 112 123h-22" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M90 123l30 45" stroke="#fff" stroke-width="10" stroke-linecap="round"/><circle cx="152" cy="150" r="30" fill="url(#rgold)"/><circle cx="152" cy="150" r="22" stroke="rgba(255,255,255,0.35)" stroke-width="2" fill="none"/><polygon points="152,132 156,150 152,145 148,150" fill="#fff"/><polygon points="152,168 156,150 152,155 148,150" fill="rgba(255,255,255,0.35)"/><circle cx="152" cy="150" r="5" fill="#fff"/></svg></div>
     <div>
       <p class="section-label">À propos</p>
       <h2 class="section-title" style="font-size:1.8rem">Qui est derrière Raftel Développement ?</h2>
@@ -465,5 +482,6 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
 </footer>
 
 <script defer src="/_vercel/insights/script.js"></script>
+<script src="play-links.js"></script>
 </body>
 </html>
