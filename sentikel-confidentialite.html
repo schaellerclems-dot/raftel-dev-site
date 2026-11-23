@@ -25,7 +25,7 @@
 <main>
   <p><a href="sentikel.html">← Sentikel</a> · <a href="legal.html">Documents légaux</a> · <a href="index.html">Raftel Développement</a></p>
   <h1>Politique de confidentialité de Sentikel</h1>
-<p class="maj">Dernière mise à jour : 20 novembre 2026</p>
+<p class="maj">Dernière mise à jour : 23 novembre 2026</p>
 
 <p>Sentikel est une application mobile qui regroupe les papiers de la maison et rappelle chaque échéance : factures et garanties, contrats (assurances, abonnements), véhicules, entretien du logement et papiers officiels.
 Cette page explique quelles données sont traitées, pourquoi, où elles sont stockées et quels sont vos droits,
@@ -50,6 +50,7 @@ Contact pour toute question relative à vos données : <a href="mailto:contact@r
 <tr><td>Nom et adresse postale (facultatifs)</td><td>Remplissage de la lettre SAV, de la lettre de résiliation et des dossiers assurance et sinistre</td><td>Exécution du service demandé</td></tr>
 <tr><td>Adresse e-mail et mot de passe (uniquement si vous créez un compte)</td><td>Sauvegarde en ligne et partage avec votre foyer</td><td>Exécution du service demandé</td></tr>
 <tr><td>Image de la facture ou du document de contrat et texte reconnu (Premium, lecture intelligente)</td><td>Remplissage automatique des informations du produit ou du contrat</td><td>Exécution du service demandé</td></tr>
+<tr><td>Documents importés en lot (dossier ou sélection de fichiers) : image de la première page et texte reconnu (Premium, lecture précise)</td><td>Choix automatique de la rubrique (garantie, contrat, véhicule, logement…) et remplissage des informations</td><td>Exécution du service demandé</td></tr>
 <tr><td>Rapports de plantage (modèle d'appareil, version d'Android, trace technique de l'erreur)</td><td>Détecter et corriger les bugs</td><td>Intérêt légitime</td></tr>
 <tr><td>Informations d'abonnement (statut de l'achat fourni par Google Play)</td><td>Activer les fonctions Premium</td><td>Exécution du contrat</td></tr>
 </table>
@@ -61,9 +62,19 @@ Contact pour toute question relative à vos données : <a href="mailto:contact@r
 <li><b>Sauvegarde en ligne (si vous créez un compte, option Premium)</b> : produits, contrats, éléments de la maison (véhicules, logement, papiers), factures et documents sont hébergés par Google
 (Firebase Firestore et Cloud Storage) dans la région <b>europe-west9 (Paris, France)</b>. Seuls les membres de votre foyer y ont accès.</li>
 <li><b>Compte</b> : l'authentification (adresse e-mail) est gérée par Google Firebase Authentication.</li>
-<li><b>Lecture intelligente (Premium)</b> : l'image de la facture est envoyée au service d'intelligence artificielle
-Google (Firebase AI Logic / Gemini, via Google Cloud) pour en extraire les informations, en priorité dans une région européenne.
-Elle n'est pas conservée par Sentikel au-delà du traitement.</li>
+<li><b>Lecture intelligente et import précis (Premium)</b> : l'image de la première page du document (facture, contrat,
+facture de garage, attestation d'entretien…) et le texte reconnu sont envoyés au service d'intelligence artificielle
+Google (Firebase AI Logic / Gemini, via Google Cloud) pour déterminer sa rubrique et en extraire les informations, en priorité
+dans une région européenne. Ils ne sont pas conservés par Sentikel au-delà du traitement. Les papiers officiels (pièce d'identité,
+passeport, permis, titre de séjour, carte Vitale, avis d'impôt, acte d'état civil) ne sont jamais envoyés : ils sont reconnus et lus
+uniquement sur votre téléphone.</li>
+<li><b>Import de plusieurs documents</b> : les fichiers que vous choisissez (dossier du téléphone, sélection de fichiers, partage
+depuis une autre application comme OneDrive ou Google Drive) sont copiés dans l'application. Sentikel n'accède qu'aux fichiers
+que vous sélectionnez, jamais au reste de votre stockage ni à vos comptes en ligne.</li>
+<li><b>Sauvegarde Android</b> : si la sauvegarde de votre téléphone est activée, Android peut inclure les données de Sentikel
+(fiches, documents, réglages) dans la sauvegarde de votre compte Google, pour les retrouver sur un nouveau téléphone. Cette sauvegarde
+est gérée par Google et peut être désactivée dans les paramètres Android. La clé du coffre chiffré et les informations de connexion
+au cloud n'y figurent jamais.</li>
 <li><b>Rapports de plantage</b> : Firebase Crashlytics (Google). Ils ne contiennent ni vos documents ni les informations que vous avez saisies.</li>
 </ul>
 <p>Google agit en tant que sous-traitant, dans le cadre des conditions de traitement des données de Firebase et de Google Cloud,
