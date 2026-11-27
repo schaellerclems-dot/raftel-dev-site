@@ -91,19 +91,6 @@ section{padding:5.5rem 2rem}
 .ds .app-tag{color:var(--blue);border:1px solid rgba(79,195,247,0.35)} .ds li::before,.ds .status,.ds .link-more{color:var(--blue)}
 .sk .app-tag{color:var(--green);border:1px solid rgba(62,201,138,0.35)} .sk li::before,.sk .status,.sk .link-more{color:var(--green)}
 .lu .app-tag{color:var(--purple);border:1px solid rgba(180,120,255,0.35)} .lu li::before,.lu .status,.lu .link-more{color:var(--purple)}
-.mb .app-tag{color:var(--teal);border:1px solid rgba(38,198,218,0.35)} .mb li::before,.mb .status,.mb .link-more{color:var(--teal)}
-.of .app-tag{color:var(--pink);border:1px solid rgba(255,126,182,0.35)} .of li::before,.of .status,.of .link-more{color:var(--pink)}
-.games-band{background:linear-gradient(180deg,transparent,rgba(38,198,218,0.05),transparent)}
-.mock-head .ico.teal{background:linear-gradient(135deg,#0b6e7a,#26c6da)}
-.mock-head .ico.pink{background:linear-gradient(135deg,#5b2a86,#ff7eb6)}
-.tide{position:relative;height:90px;border-radius:12px;overflow:hidden;margin:0.4rem 0 1rem;background:linear-gradient(180deg,#1d3b52,#c9a96e 78%)}
-.tide .sea{position:absolute;left:0;right:0;top:0;height:38%;background:linear-gradient(180deg,#1a8fb0,#26c6da);border-bottom:3px solid rgba(255,255,255,0.55)}
-.tide .loot{position:absolute;bottom:12px;font-size:1.3rem}
-.ghosts{display:flex;align-items:flex-end;gap:6px;height:90px;margin:0.4rem 0 1rem;padding:0 0.4rem;border-radius:12px;background:linear-gradient(180deg,#1b1240,#0e1020)}
-.ghosts .blk{flex:1;border-radius:6px 6px 0 0;background:rgba(255,126,182,0.22);border:1px dashed rgba(255,126,182,0.6);display:grid;place-items:center;font-size:0.95rem}
-.ghosts .blk.solid{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2)}
-.alert.teal{background:rgba(38,198,218,0.08);border-color:rgba(38,198,218,0.28)}
-.alert.pink{background:rgba(255,126,182,0.08);border-color:rgba(255,126,182,0.28)}
 
 /* VISUALS */
 .app-visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:440px}
@@ -200,7 +187,6 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
     <li><a href="#deuxsecondes">DeuxSecondes</a></li>
     <li><a href="#sentikel">Sentikel</a></li>
     <li><a href="#lunilo">Lunilo</a></li>
-    <li><a href="#jeux">Jeux</a></li>
     <li><a href="blog.html">Conseils</a></li>
     <li><a href="#sortie">Être prévenu</a></li>
     <li><a href="#apropos">À propos</a></li>
@@ -221,8 +207,6 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
       <a class="chip" href="#deuxsecondes"><span class="dot" style="background:rgba(79,195,247,0.18)">🛡️</span>DeuxSecondes</a>
       <a class="chip" href="#sentikel"><span class="dot" style="background:rgba(62,201,138,0.18)">🧾</span>Sentikel</a>
       <a class="chip" href="#lunilo"><span class="dot" style="background:rgba(180,120,255,0.18)">🎒</span>Lunilo</a>
-      <a class="chip" href="#maree-basse"><span class="dot" style="background:rgba(38,198,218,0.18)">🌊</span>Marée Basse</a>
-      <a class="chip" href="#obby-fantome"><span class="dot" style="background:rgba(255,126,182,0.18)">👻</span>Obby Fantôme</a>
     </div>
   </div>
 </header>
@@ -333,81 +317,6 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
   </div>
 </section>
 
-<section id="jeux" class="games-band">
-  <div class="wrap">
-    <p class="section-label">Les jeux</p>
-    <div class="gold-line"></div>
-    <h2 class="section-title">Deux jeux Roblox à jouer entre amis</h2>
-    <p class="section-desc">Raftel Développement crée aussi des jeux. Ils sont gratuits sur Roblox, sur ordinateur, téléphone et tablette, et se jouent mieux à plusieurs.</p>
-
-    <!-- MAREE BASSE -->
-    <article class="app mb" id="maree-basse">
-      <div>
-        <span class="app-tag">Aventure coopérative</span>
-        <h3>Marée Basse</h3>
-        <p class="pitch">La mer se retire et dévoile ses trésors. Rapportez le butin au port avant que la vague revienne.</p>
-        <ul>
-          <li>À chaque marée basse, épaves, coffres et trésors réapparaissent sur le sable</li>
-          <li>Plus on va loin, plus le butin est précieux, et plus le retour est risqué</li>
-          <li>Certains trésors sont trop lourds pour un seul joueur : il faut les porter à deux</li>
-          <li>Progression sauvegardée et classement des meilleurs pilleurs sur le quai</li>
-        </ul>
-        <div class="status">Disponible sur Roblox</div>
-        <div class="app-actions">
-          <a href="https://www.roblox.com/games/88440998573615" target="_blank" rel="noopener" class="btn btn-ghost" style="border-color:rgba(38,198,218,0.5);color:var(--teal)">Jouer sur Roblox</a>
-        </div>
-      </div>
-      <div class="app-visual">
-        <div class="glow" style="background:var(--teal)"></div>
-        <div class="mock">
-          <span class="mock-badge">Aperçu</span>
-          <div class="mock-head"><div class="ico teal">🌊</div><div><b>Marée basse en cours</b><span>Le quai est à 120 m</span></div></div>
-          <div class="tide"><div class="sea"></div><span class="loot" style="left:14%">🪙</span><span class="loot" style="left:46%">📦</span><span class="loot" style="left:78%">💎</span></div>
-          <div class="bar"><i style="width:62%;background:var(--teal)"></i></div>
-          <div style="font-size:0.78rem;color:var(--muted)">La marée remonte dans 38 secondes</div>
-          <div class="alert teal">⚠️<span>Trop gourmand ? La vague emporte ce que vous n'avez pas ramené au port.</span></div>
-        </div>
-      </div>
-    </article>
-
-    <!-- OBBY FANTOME -->
-    <article class="app of reverse" id="obby-fantome">
-      <div>
-        <span class="app-tag">Parcours · Obby</span>
-        <h3>Obby Fantôme</h3>
-        <p class="pitch">Le parcours où tomber sert à quelque chose : chaque chute laisse un fantôme sur lequel les autres peuvent marcher.</p>
-        <ul>
-          <li>40 étapes à travers la prairie, les nuages, le néon et le volcan</li>
-          <li>Des gouffres trop larges pour un seul saut : les fantômes des autres joueurs font le pont</li>
-          <li>Des Âmes à gagner chaque fois que votre fantôme aide quelqu'un</li>
-          <li>Chrono speedrun, classement mondial, badges et traînées à débloquer</li>
-        </ul>
-        <div class="status">Disponible sur Roblox</div>
-        <div class="app-actions">
-          <a href="https://www.roblox.com/games/73673295939212" target="_blank" rel="noopener" class="btn btn-ghost" style="border-color:rgba(255,126,182,0.5);color:var(--pink)">Jouer sur Roblox</a>
-        </div>
-      </div>
-      <div class="app-visual">
-        <div class="glow" style="background:var(--pink)"></div>
-        <div class="mock">
-          <span class="mock-badge">Aperçu</span>
-          <div class="mock-head"><div class="ico pink">👻</div><div><b>Étape 17 · Nuages</b><span>Chrono : 04:12</span></div></div>
-          <div class="ghosts">
-            <div class="blk solid" style="height:55%"></div>
-            <div class="blk" style="height:40%">👻</div>
-            <div class="blk" style="height:48%">👻</div>
-            <div class="blk" style="height:56%">👻</div>
-            <div class="blk solid" style="height:62%"></div>
-          </div>
-          <div class="bar"><i style="width:42%;background:var(--pink)"></i></div>
-          <div style="font-size:0.78rem;color:var(--muted)">17 étapes sur 40 · 6 Âmes gagnées</div>
-          <div class="alert pink">👻<span>Ton fantôme a aidé un joueur à franchir le gouffre !</span></div>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
 <section style="background:linear-gradient(180deg,transparent,rgba(14,16,32,0.6),transparent)">
   <div class="wrap">
     <p class="section-label">Nos engagements</p>
@@ -491,7 +400,6 @@ footer{border-top:1px solid rgba(255,255,255,0.06);padding:2rem 3rem;display:fle
     <li><a href="deuxsecondes.html">DeuxSecondes</a></li>
     <li><a href="sentikel.html">Sentikel</a></li>
     <li><a href="lunilo.html">Lunilo</a></li>
-    <li><a href="#jeux">Jeux Roblox</a></li>
     <li><a href="blog.html">Conseils</a></li>
     <li><a href="developpement-sur-mesure.html">Sur mesure</a></li>
     <li><a href="legal.html">Documents légaux</a></li>
