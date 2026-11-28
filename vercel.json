@@ -1,6 +1,36 @@
 {
   "redirects": [
     {
+      "source": "/sentikel.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sentikel",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sentikel-confidentialite.html",
+      "destination": "/legal.html",
+      "permanent": true
+    },
+    {
+      "source": "/sentikel-suppression-compte.html",
+      "destination": "/legal.html",
+      "permanent": true
+    },
+    {
+      "source": "/garantie-legale-conformite.html",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
+      "source": "/ticket-de-caisse-perdu-garantie.html",
+      "destination": "/blog.html",
+      "permanent": true
+    },
+    {
       "source": "/guide-active-directory.html",
       "destination": "/",
       "permanent": true
