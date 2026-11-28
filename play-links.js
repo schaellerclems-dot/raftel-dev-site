@@ -4,7 +4,6 @@
 window.PLAY_LINKS = {
   "deuxsecondes-parent": "",
   "deuxsecondes-enfant": "",
-  "sentikel": "",
   "lunilo": "https://play.google.com/store/apps/details?id=com.rafteldeveloppement.lunilo"
 };
 document.addEventListener("DOMContentLoaded", function () {
